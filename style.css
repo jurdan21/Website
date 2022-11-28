@@ -25,7 +25,7 @@ body {
 }
 
 .splash h1 {
-    font-size: 5rem;
+    font-size: 5.2rem;
     line-height: auto;
     color: #242424;
     text-align: center;
@@ -33,8 +33,8 @@ body {
 
 .splash p {
     font-family: 'Sora', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 28px;
     color: #242424;
     text-align: center;
     max-width: 520px;
