@@ -21,12 +21,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4px;
+    gap: 24px;
 }
 
 .splash h1 {
-    font-size: 5.2rem;
-    line-height: auto;
+    font-size: 120px;
+    line-height: 112px;
     color: #242424;
     text-align: center;
 }
