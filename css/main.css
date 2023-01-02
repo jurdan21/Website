@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap");
+/*--- typography ---*/
+h1, h2, h3, h4, h5, h6, p, a, small, span {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.extralight {
+  font-weight: 200;
+  font-style: normal;
+}
+
+.light {
+  font-weight: 300;
+  font-style: normal;
+}
+
+.reguler {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.medium {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.semibold {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.text-12px {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.text-14px {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+}
+
+.text-16px {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.text-20px {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+}
+
+.display-140px {
+  font-size: 140px;
+  line-height: 140px;
+  letter-spacing: -1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bg-padding-black {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 32px;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 48px;
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.navbar-menu a:hover {
+  color: #FFDB00;
+}
+
+.btn-md {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  height: 30px;
+}
+
+.btn-outline {
+  border: 1px solid #FFDB00;
+  border-radius: 666px;
+  text-decoration: none;
+  color: #FFDB00;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socmed a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer-socmed a:hover {
+  color: #FFDB00;
+}
+
+.index-content {
+  background-color: #131E0B;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.index-text {
+  margin-top: 148px;
+  margin-bottom: 148px;
+}
+.index-text img {
+  width: 100%;
+}
+
+.index-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.index-intro p {
+  max-width: 392px;
+}
+.index-intro p a {
+  color: #FFFFFF;
+  color: #FFDB00;
+}
+
+.index-intro-skill {
+  max-width: 432px;
+}
+.index-intro-skill p {
+  margin-bottom: 8px;
+  color: #8B8E85;
+}
+
+.index-moon {
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+
+.index-content {
+    background-color: $greenStile-base;
+    padding-top: $space-3xl;
+    padding-bottom: $space-3xl;
+}
+
+.index-text {
+    margin-top: 148px;
+    margin-bottom: 148px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.index-intro {
+    @include flex-space-between;
+    align-items: flex-end;
+
+    p {
+        max-width: 392px;
+
+        a {
+            @include textlink-underline;
+            color: $yellowTurn-base;
+        }
+    }
+}
+
+.index-intro-skill {
+    max-width: 432px;
+
+    p {
+        margin-bottom: 8px;
+        color: $greenStile-light;
+    }
+}
+
+.index-moon {
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}

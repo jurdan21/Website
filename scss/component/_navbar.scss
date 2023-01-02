@@ -1,0 +1,15 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+
+.navbar {
+    @include flex-space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 48px;
+
+    a {@include textlink-without-underline;}
+    a:hover {color: $yellowTurn-base;}
+}

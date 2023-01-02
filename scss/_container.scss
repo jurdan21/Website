@@ -1,0 +1,29 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.bg-padding-black {
+    background-color: $black;
+    color: $white;
+    padding: $space-2xl;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: $space-3xl;
+    padding-right: $space-3xl;
+}

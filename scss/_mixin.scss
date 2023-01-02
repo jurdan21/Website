@@ -1,0 +1,17 @@
+@import 'variable.scss';
+
+// text style
+@mixin textlink-without-underline {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@mixin textlink-underline {
+    color: #FFFFFF;
+}
+
+// display flex
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
