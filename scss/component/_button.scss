@@ -1,0 +1,33 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+
+.btn-md {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-md-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    border: 1px solid $yellowTurn-base;
+    border-radius: 666px;
+    text-decoration: none;
+    color: $yellowTurn-base;
+}
+
+.btn-outline:hover {
+    border: 1px solid $white;
+    color: $white;
+}

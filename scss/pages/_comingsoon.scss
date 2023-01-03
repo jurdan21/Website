@@ -1,0 +1,11 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+
+.soon-content {
+    @include main-center;
+    flex-direction: column;
+    gap: 72px;
+
+    a {@include textlink-without-underline;}
+    a:hover {color: $yellowTurn-base;}
+}

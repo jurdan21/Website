@@ -1,0 +1,72 @@
+@import 'variable.scss';
+
+// text style
+@mixin textlink-without-underline {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@mixin textlink-underline {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+// display flex
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+// layouting
+@mixin main-center {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// responsive configuration
+@mixin max-width-1728px {
+    @media (max-width: 1728px) {@content;}
+}
+
+@mixin max-width-1440px {
+    @media (max-width: 1440px) {@content;}
+}
+
+@mixin max-width-1280px {
+    @media (max-width: 1280px) {@content;}
+}
+
+@mixin max-width-1024px {
+    @media (max-width: 1024px) {@content;}
+}
+
+@mixin max-width-968px {
+    @media (max-width: 968px) {@content;}
+}
+
+@mixin max-width-836px {
+    @media (max-width: 836px) {@content;}
+}
+
+@mixin max-width-748px {
+    @media (max-width: 748px) {@content;}
+}
+
+@mixin max-width-564px {
+    @media (max-width: 564px) {@content;}
+}
+
+@mixin max-width-428px {
+    @media (max-width: 428px) {@content;}
+}
+
+@mixin max-width-360px {
+    @media (max-width: 360px) {@content;}
+}

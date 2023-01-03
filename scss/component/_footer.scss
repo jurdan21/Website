@@ -1,0 +1,13 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+
+.footer {
+    @include flex-space-between;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.footer-socmed {
+    a {@include textlink-without-underline;}
+    a:hover {color: $yellowTurn-base;}
+}
