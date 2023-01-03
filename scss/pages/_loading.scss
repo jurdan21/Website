@@ -1,0 +1,27 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+
+.loading-flower {
+    @include main-center;
+    background-color: $greenStile-base;
+    z-index: 2;
+    
+    img {
+        animation: rotation 3s infinite linear;
+    }
+}
+
+.loading-flower.display-none {
+    opacity: 0%;
+    z-index: -2;
+    transition: all 0.5s ease-out;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

@@ -12,41 +12,55 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   </head>
   <body class="bg-padding-black">
-    <main class="index-content container">
-      
+    <!--loading state-->
+    <div class="loading-flower">
+      <img src="https://res.cloudinary.com/dirms5hch/image/upload/v1672722294/ornament/loading-flower_wa5tjr.svg">
+    </div>
+    
+    <!--main content-->
+    <main class="index-content container"> 
+
+      <!--component: navbar-->
       <navbar class="navbar">
         <a class="text-14px extralight btn-md btn-outline" href="#">THE ART OF KAREPE DEWE</a>
         <div class="navbar-menu text-14px extralight">
-          <a href="#">WORK</a>
-          <a href="#">ABOUT</a>
-          <a href="#">JOURNAL</a>
-          <a href="#">CONTACT</a>
+          <a href="pages/comingsoon.html">WORK</a>
+          <a href="pages/comingsoon.html">ABOUT</a>
+          <a href="pages/comingsoon.html">JOURNAL</a>
+          <a href="pages/comingsoon.html">CONTACT</a>
+        </div>
+        <div class="navbar-icon btn-md-icon btn-outline">
+          <img src="https://res.cloudinary.com/dirms5hch/image/upload/v1672665951/icon-library/menu-nav-yellow_w7z1og.svg">
         </div>
       </navbar>
 
-      <section class="index-text">
-        <img src="https://res.cloudinary.com/dirms5hch/image/upload/v1672652327/ornament/mesin-merayap-text_d74r9v.svg">
-      </section>
+      <!--component: text mesin merayap-->
+      <img class="index-text" src="https://res.cloudinary.com/dirms5hch/image/upload/v1672722076/ornament/mesin-merayap-text_xd4qrt.svg">
 
+      <!--section: intro-->
       <section class="index-intro">
         <div class="index-intro-skill">
           <p class="text-14px extralight">DAFTAR KEMAMPUAN YANG DIKUASAI:</p>
-          <h1 class="text-20px extralight">User Experience Design / User Interface Design / Design system / Illustration / Sembarang</h1>
+          <h1 class="text-20px extralight">User Experience Design / User Interface Design / Design System / Illustration / Sembarang</h1>
         </div>
-        <p class="text-16px extralight">Satria Ridho ato <a href="#">Edo</a> adalah seorang manusia normal yang bernafas menggunakan paru paru dan saat ini sedang bekerja sebagai UX Designer di <a href="#">Delos Aqua</a>.</p>
+        <p class="text-16px extralight">Satria Ridho ato <a href="https://www.instagram.com/satriardo/">Edo</a> adalah seorang manusia normal yang bernafas menggunakan paru paru dan saat ini sedang bekerja sebagai UX Designer di <a href="https://delosaqua.com/">Delos Aqua</a>.</p>
       </section>
+      <!--component: moon-->
+      <img class="index-moon" src="https://res.cloudinary.com/dirms5hch/image/upload/v1672708127/ornament/ellipse-linear_shx9gh.svg">
 
-      <img class="index-moon" src="https://res.cloudinary.com/dirms5hch/image/upload/v1672655636/ornament/ellipse-linear_qahqo2.svg">
+      <!--component: footer-->
       <footer class="footer">
-        <p class="text-14px extralight">Dibuat karepe dewe © 2022, Mesin Merayap</p>
+        <p class="text-14px extralight">Mesin Merayap © 2023. All rights reserved.</p>
         <div class="footer-socmed text-14px extralight">
-          <a href="#">Instagram</a> / 
-          <a href="#">Twitter</a> / 
-          <a href="#">Dribbble</a> / 
-          <a href="#">Behance</a> 
+          <a href="https://instagram.com/mesinmerayap">Instagram</a> / 
+          <a href="https://twitter.com/mesinmerayap">Twitter</a> / 
+          <a href="https://dribbble.com/mesinmerayap">Dribbble</a> / 
+          <a href="https://www.behance.net/mesinmerayap">Behance</a> 
         </div>
       </footer>
-
     </main>
+
+    <!--memanggil mesinnya-->
+    <script src="machine/interaction.js"></script>
   </body>
 </html>

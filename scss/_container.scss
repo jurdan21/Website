@@ -27,3 +27,38 @@ body {
     padding-left: $space-3xl;
     padding-right: $space-3xl;
 }
+
+// responsive configuration
+@include max-width-1024px {
+    .bg-padding-black {
+        padding: $space-xl;
+    }
+
+    .container {
+        padding-left: $space-2xl;
+        padding-right: $space-2xl;
+    }
+}
+
+@include max-width-836px {
+    .bg-padding-black {
+        padding: $space-md;
+    }
+
+    .container {
+        padding-left: $space-xl;
+        padding-right: $space-xl;
+    }
+}
+
+@include max-width-564px {
+    .bg-padding-black {
+        padding: $space-sm;
+    }
+
+    .container {
+        padding-left: $space-lg;
+        padding-right: $space-lg;
+    }
+}
+

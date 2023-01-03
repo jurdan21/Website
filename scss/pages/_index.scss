@@ -10,15 +10,14 @@
 .index-text {
     margin-top: 148px;
     margin-bottom: 148px;
-
-    img {
-        width: 100%;
-    }
+    width: 100%
 }
 
 .index-intro {
     @include flex-space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 48px;
 
     p {
         max-width: 392px;
@@ -43,4 +42,26 @@
     width: 100%;
     margin-top: 48px;
     margin-bottom: 48px;
+}
+
+// responsive configuration
+@include max-width-1024px {
+    .index-content {
+        padding-top: $space-2xl;
+        padding-bottom: $space-2xl;
+    }
+}
+
+@include max-width-836px {
+    .index-content {
+        padding-top: $space-xl;
+        padding-bottom: $space-xl;
+    }
+}
+
+@include max-width-564px {
+    .index-content {
+        padding-top: $space-lg;
+        padding-bottom: $space-lg;
+    }
 }
