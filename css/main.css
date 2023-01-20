@@ -9,6 +9,15 @@
   font-family: "Archivo", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /*--- typography ---*/
 h1, h2, h3, h4, h5, h6, p, a, small, span {
   -webkit-margin-before: 0;
@@ -76,10 +85,30 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
   justify-content: space-between;
 }
 .navbar-main a {
+  width: 156px;
   text-decoration: none;
   color: #FFFFFF;
 }
 
+.navbar-icon {
+  padding-left: 116px;
+}
+
 /*--- pages ---*/
 /*--- color collection ---*/
-/*--- typography varian ---*//*# sourceMappingURL=main.css.map */
+/*--- typography varian ---*/
+.index-hero {
+  margin-top: 120px;
+}
+
+.index-hero-main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.index-hero-main p:nth-child(1) {
+  text-align: end;
+}
+.index-hero-main img {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

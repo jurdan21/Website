@@ -1,2 +1,15 @@
 @import '../variable.scss';
 @import '../mixin.scss';
+
+.index-hero {
+    margin-top: $section-spacing;
+}
+
+.index-hero-main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p:nth-child(1) {text-align: end;}
+    img {width: 100%}
+}

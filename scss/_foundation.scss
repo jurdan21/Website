@@ -8,6 +8,15 @@
     font-family: 'Archivo', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 /*--- typography ---*/
 h1, h2, h3, h4, h5, h6, p, a, small, span {
     margin-block-start: 0;
