@@ -1,0 +1,11 @@
+/*--- foundation ---*/
+@import 'variable.scss';
+@import 'mixin.scss';
+@import 'foundation.scss';
+
+/*--- component ---*/
+@import 'component/navbar.scss';
+@import 'component/footer.scss';
+
+/*--- pages ---*/
+@import 'pages/index.scss';
