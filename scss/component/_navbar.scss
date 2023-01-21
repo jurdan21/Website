@@ -1,17 +1,24 @@
 @import '../variable.scss';
 @import '../mixin.scss';
 
-.navbar-main {
-    display: flex;
-    justify-content: space-between;
+.navbar {margin-top: 40px;}
+.navbar-main {@include flex-space-between-center;}
 
-    a {
-        width: 156px;
-        text-decoration: none;
-        color: $white;
-    }
+.navbar-logo {
+    width: 156px;
+    text-decoration: none;
 }
 
 .navbar-icon {
-    padding-left: 116px;
+    display: inline-flex;
+    justify-content: end;
+    width: 156px;
 }
+
+// responsive configuration
+@include max-width-836px {
+    .navbar-statement {
+        display: none;
+    }
+}
+

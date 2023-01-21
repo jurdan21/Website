@@ -1,15 +1,73 @@
 @import '../variable.scss';
 @import '../mixin.scss';
 
-.index-hero {
-    margin-top: $section-spacing;
-}
+.navbar-logo {color: $white;}
+.navbar-logo:hover {color: $hover-for-bgdark;}
+
+.index-hero {margin-top: $section-spacing;}
 
 .index-hero-main {
-    display: flex;
-    flex-direction: column;
+    @include flex-column-direction;    
     gap: 8px;
 
     p:nth-child(1) {text-align: end;}
-    img {width: 100%}
+    img {width: 100%;}
+    img:nth-child(4) {
+        height: 760px; 
+        object-fit: cover;
+    }
+}
+
+.index-intro {
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+.index-intro-main {
+    @include flex-space-between;
+    gap: 40px;
+    
+    p:nth-child(1) {
+        max-width: 340px;
+        a {color: $white;}
+        a:hover {color: $hover-for-bgdark;}
+    }
+
+    h5 {
+        width: 100%;
+        text-align: end;
+        color: $black-lighter;
+    }
+
+    .index-intro-skill p {
+        width: 316px;
+    }
+}
+
+.footer-socmed a {
+    color: $white;
+    text-decoration: none;
+}
+
+.footer-socmed a:hover {
+    color: $hover-for-bgdark;
+}
+
+// responsive configuration 
+@include max-width-836px {
+    .index-intro-main {
+        flex-wrap: wrap;
+        gap: 24px;
+
+        h5 {
+            margin-top: 16px;
+            text-align: start;
+        }
+    }
+}
+
+@include max-width-564px {
+    .index-hero-main {
+        img:nth-child(4) {height: 400px; object-fit: cover;}
+    }
 }
