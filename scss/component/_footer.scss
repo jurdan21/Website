@@ -1,13 +1,27 @@
 @import '../variable.scss';
 @import '../mixin.scss';
 
-.footer {padding-bottom: 40px;}
+.footer {margin-bottom: 40px;}
 .footer-main {@include flex-space-between-center;}
 
 // responsive configuration
+@include max-width-836px {
+    .footer {margin-bottom: 36px;}
+}
+
+@include max-width-748px {
+    .footer {margin-bottom: 32px;}
+}
+
 @include max-width-564px {
-    .footer-main {
-        flex-wrap: wrap;
-        gap: 4px;
-    }
+    .footer {margin-bottom: 28px;}
+    .footer-main {flex-wrap: wrap;}
+}
+
+@include max-width-428px {
+    .footer {margin-bottom: 24px;}
+}
+
+@include max-width-360px {
+    .footer {margin-bottom: 20px;}
 }

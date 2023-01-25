@@ -17,8 +17,23 @@
 
 // responsive configuration
 @include max-width-836px {
-    .navbar-statement {
-        display: none;
-    }
+    .navbar {margin-top: 36px;}
+    .navbar-statement {display: none;}
+}
+
+@include max-width-748px {
+    .navbar {margin-top: 32px;}
+}
+
+@include max-width-564px {
+    .navbar {margin-top: 28px;;}
+}
+
+@include max-width-428px {
+    .navbar {margin-top: 24px;}
+}
+
+@include max-width-360px {
+    .navbar {margin-top: 20px;}
 }
 
