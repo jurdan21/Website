@@ -1,0 +1,23 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+
+.intro {
+    background-color: $black-base;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {max-width: 100%;}
+}
+
+.intro.display-none {
+    opacity: 0%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
