@@ -35,3 +35,22 @@
     display: inline-flex;
     gap: 8px;
 }
+
+// responsive configuration
+@include max-width-1024px {
+    .contact-hero-main {
+        flex-wrap: wrap;
+        gap: $section-spacing;
+    }
+}
+
+@include max-width-564px {
+    .contact-hero-main {
+        padding-top: 240px;
+
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+}

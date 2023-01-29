@@ -527,4 +527,33 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .contact-hero-action {
   display: inline-flex;
   gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .contact-hero-main {
+    flex-wrap: wrap;
+    gap: 120px;
+  }
+}
+@media (max-width: 564px) {
+  .contact-hero-main {
+    padding-top: 240px;
+  }
+  .contact-hero-main h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+.soon-hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soon-hero p {
+  color: #444444;
 }/*# sourceMappingURL=main.css.map */
