@@ -1,9 +1,6 @@
 @import '../variable.scss';
 @import '../mixin.scss';
 
-.navbar-logo {color: $white;}
-.navbar-logo:hover {color: $hover-for-bgdark;}
-
 .index-hero {margin-top: $section-spacing;}
 
 .index-hero-main {
@@ -42,15 +39,6 @@
     .index-intro-skill p {
         width: 316px;
     }
-}
-
-.footer-socmed a {
-    color: $white;
-    text-decoration: none;
-}
-
-.footer-socmed a:hover {
-    color: $hover-for-bgdark;
 }
 
 // responsive configuration 

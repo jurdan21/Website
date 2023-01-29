@@ -13,16 +13,40 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   </head>
   <body style="background-color: #000000; color: #FFFFFF;">
+    <div class="intro container">
+      <img src="https://res.cloudinary.com/dirms5hch/image/upload/v1674785460/ornament/intro-img_qvjbwe.svg">
+    </div>
 
     <nav class="navbar">
-      <div class="navbar-main container">
+      <div class="navbar-main navbar-white container">
         <a class="navbar-logo text-18px extralight" href="index.html">MESIN MERAYAP</a>
         <p class="navbar-statement text-18px extralight">Designer from Malang, Indonesia</p>
-        <div class="navbar-icon">
+        <div class="navbar-icon" onclick="navbarmenuOpen()">
           <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 6H37V8H3V6Z" fill="white"/>
             <path d="M3 16H37V18H3V16Z" fill="white"/>
           </svg>
+        </div>
+      </div>
+      <div class="navbar-opened container" id="navbarTrigger">
+        <div onclick="navbarmenuClose()">
+          <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6H37V8H3V6Z" fill="white"/>
+            <path d="M3 16H37V18H3V16Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="navbar-menu display-132px extralight">
+          <a href="pages/work.html">Work</a>
+          <a href="pages/about.html">About</a>
+          <a href="pages/journal.html">Journal</a>
+          <a href="pages/bingung.html">Bingung</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+        <div class="navbar-socmed text-18px extralight">
+          <a href="https://instagram.com/mesinmerayap">Instagram</a> / 
+          <a href="https://twitter.com/mesinmerayap">Twitter</a> / 
+          <a href="https://dribbble.com/mesinmerayap">Dribbble</a> / 
+          <a href="https://www.behance.net/mesinmerayap">Behance</a>
         </div>
       </div>
     </nav>
@@ -52,8 +76,8 @@
 
     <footer class="footer">
       <div class="footer-main container">
-        <p class="text-18px extralight">Mesin Merayap © 2023. Olrait reserved</p>
-          <div class="footer-socmed text-18px extralight">
+        <p class="text-18px extralight">Never grow old ☺︎ 1969</p>
+          <div class="footer-socmed footer-white text-18px extralight">
             <a href="https://instagram.com/mesinmerayap">Instagram</a> / 
             <a href="https://twitter.com/mesinmerayap">Twitter</a> / 
             <a href="https://dribbble.com/mesinmerayap">Dribbble</a> / 
@@ -62,5 +86,7 @@
       </div>
     </footer>
 
+    <script src="machine/interaction.js"></script>
+    <script src="machine/trigger.js"></script>
   </body>
 </html>

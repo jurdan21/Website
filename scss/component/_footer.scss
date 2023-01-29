@@ -4,6 +4,39 @@
 .footer {margin-bottom: 40px;}
 .footer-main {@include flex-space-between-center;}
 
+.footer-white {
+    color: $white;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    a:hover {color: $hover-for-bgdark;}
+}
+
+.footer-darkgreen {
+    color: $darkgreen-base;
+
+    a {
+        color: $darkgreen-base;
+        text-decoration: none;
+    }
+
+    a:hover {color: $hover-for-bglight;}
+}
+
+.footer-yellow {
+    color: $yellow-base;
+
+    a {
+        color: $yellow-base;
+        text-decoration: none;
+    }
+
+    a:hover {color: $white;}
+}
+
 // responsive configuration
 @include max-width-836px {
     .footer {margin-bottom: 36px;}

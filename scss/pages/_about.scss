@@ -1,0 +1,83 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+
+.about-hero {margin-top: $section-spacing;}
+
+.about-hero-main {
+    @include flex-column-direction;
+    gap: 8px;
+
+    img {width: 100%;}
+    img:nth-child(2) {
+        height: 760px;
+        object-fit: cover;
+    }
+}
+
+.about-hero-description {
+    text-align: center;
+    margin-top: 32px;
+    @include flex-column-direction;
+    align-items: center;
+    
+    h1 {color: $darkgreen-lighter;}
+
+    p {
+        margin-top: 16px;
+        max-width: 720px;
+    }
+}
+
+.about-experience {
+    margin-top: $section-spacing;
+    margin-bottom: $section-spacing;
+}
+
+.about-experience-title {
+    @include flex-space-between;
+
+    p {
+        text-align: center;
+        color: $darkgreen-lighter;
+    }
+}
+
+.about-experience-list {
+    margin-top: 9px;
+    @include flex-column-direction;
+}
+
+.about-experience-item {
+    margin-top: -1px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid $darkgreen-lightest;
+    border-bottom: 1px solid $darkgreen-lightest;
+    @include flex-space-between;
+    gap: 4px;
+
+    p {width: 100%;}
+    p:nth-child(2) {text-align: center;}
+    p:nth-child(3) {text-align: end;}
+}
+
+// responsive configuration
+@include max-width-748px {
+    .about-experience-title {
+        justify-content: center;
+
+        p:nth-child(2), p:nth-child(3) {
+            display: none;
+        }
+    }
+
+    .about-experience-item {
+        @include flex-column-direction;
+    }
+}
+
+@include max-width-564px {
+    .about-hero-main {
+        img:nth-child(2){height: 400px;}
+    }
+}
