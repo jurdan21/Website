@@ -1,0 +1,191 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+
+.index-hero {
+    margin-top: $spacing-4xl;
+
+    img {
+        width: 100%;
+    }
+}
+
+.index-hero-title {
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+
+    p:nth-child(1) {text-align: start;}
+    p:nth-child(2) {text-align: center;}
+    p:nth-child(3) {text-align: end;}
+}
+
+.index-img {
+    margin-top: $spacing-2xl;
+}
+
+.index-img-content {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 50%), url('https://res.cloudinary.com/dirms5hch/image/upload/v1676217313/img-primary/hero-section-img_thbltn.jpg');
+    background-position: center;
+}
+
+.index-img-title {
+    margin-right: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    transform: rotate(90deg);
+
+    p {
+        white-space: nowrap;
+        color: $brand-base;
+    }
+}
+
+.index-intro {
+    margin-top: $spacing-2xl;
+    display: flex;
+    justify-content: end;
+
+    p {
+        text-align: justify;
+        max-width: 356px;
+    }
+
+    a {
+        color: $brand-base;
+        text-decoration: none;
+    }
+}
+
+.index-work {
+    margin-top: $spacing-2xl;
+}
+
+.index-work-title {
+    display: flex;
+    gap: 24px;
+
+    a {
+        color: $brand-base;
+        text-decoration: none;
+    }
+}
+
+.index-work-list {
+    margin-top: $spacing-xl;
+    display: flex;
+    justify-content: space-between;
+    gap: $spacing-xl;
+}
+
+.index-work-item {
+    border-radius: 16px;
+    aspect-ratio: 3/4;
+    max-width: 100%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.index-footer {
+    margin-top: $spacing-2xl;
+    margin-bottom: $spacing-4xl;
+    display: flex;
+    justify-content: space-between;
+    gap: $spacing-xs;
+}
+
+.index-footer-socmed {
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    a:hover {
+        color: $brand-base;
+    }
+}
+
+// responsive configuration 
+@include max-width-836px {
+    .index-hero {
+        margin-top: $spacing-3xl;
+    }
+}
+
+@include max-width-748px {
+    .index-hero {
+        margin-top: $spacing-2xl;
+    }
+
+    .index-hero-title {
+        flex-direction: column;
+    }
+
+    .index-work-title {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .index-work-list {
+        margin-top: $spacing-lg;
+        flex-direction: column;
+        gap: $spacing-lg;
+    }
+
+    .index-footer {
+        flex-direction: column;
+    }
+}
+
+@include max-width-564px {
+    .index-hero {
+        margin-top: $spacing-xl;
+    }
+}
+
+@include max-width-428px {
+    .index-hero {
+        margin-top: $spacing-lg;
+    }
+}
+
+@include max-width-360px {
+    .index-hero {
+        margin-top: $spacing-md;
+    }
+
+    .index-hero-title {
+        p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .index-work-title {
+        margin-top: $spacing-md;
+    }
+
+    .index-work-list {
+        margin-top: $spacing-md;
+        gap: $spacing-md;
+    }
+
+    .index-footer {
+        p, a {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
