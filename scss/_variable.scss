@@ -1,21 +1,15 @@
-// color collection
-$black: #000000;
-$white: #FFFFFF;
-$subtitle-text: #888888;
-$brand-base: #EEE73C;
+// color collection: black
+$black-base: #000000;
+$black-light: #2B2B2B;
+$black-lighter: #555555;
+$black-lightest: #808080;
 
-// spacing
-$spacing-xs: 4px;
-$spacing-sm: 8px;
-$spacing-md: 16px;
-$spacing-lg: 24px;
-$spacing-xl: 32px;
-$spacing-2xl: 40px;
-$spacing-3xl: 48px;
-$spacing-4xl: 56px;
-$spacing-5xl: 64px;
-$spacing-6xl: 72px;
+// color collection: extra-color
+$white: #FFFFFF;
+$yellow: #EEE73C;
 
 // typography
 $letter-spacing: 0.4px;
 
+// spacing
+$border-radius: 16px;
