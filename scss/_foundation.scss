@@ -62,3 +62,33 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
     max-width: 100%;
     padding: 40px;
 }
+
+@include max-width-1280px {
+    .container-box {
+        padding: 36px;
+    }
+}
+
+@include max-width-1024px {
+    .container-box {
+       padding: 32px;
+    }
+}
+
+@include max-width-748px {
+    .container-box {
+        padding: 28px;
+    }
+}
+
+@include max-width-524px {
+    .container-box {
+        padding: 24px;
+    }
+}
+
+@include max-width-360px {
+    .container-box {
+        padding: 20px;
+    }
+}

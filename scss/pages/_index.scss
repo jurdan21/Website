@@ -12,9 +12,8 @@
 .index-hero-title {
     @include flex-space-between;
 
-    p:nth-child(2) {
-        text-align: end;
-    }
+    p {width: 100%;}
+    p:nth-child(2) {text-align: end;}
 }
 
 // index: img
@@ -67,6 +66,11 @@
 }
 
 .index-work-title {
+    display: flex;
+    gap: 24px;
+}
+
+.index-work-button {
     display: flex;
     gap: 24px;
 
@@ -141,5 +145,32 @@
 
     a:hover {
         color: $yellow;
+    }
+}
+
+// responsive configuration
+@include max-width-748px {
+    .index-hero-title {
+        flex-wrap: wrap;
+    }
+
+    .index-work-list {
+        flex-direction: column;
+    }
+
+    .index-footer {
+        flex-wrap: wrap;
+    }
+}
+
+@include max-width-524px {
+    .index-hero-title p, .index-footer p, .index-footer a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .index-work-title {
+        gap: 4px;
+        flex-wrap: wrap;
     }
 }

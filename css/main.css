@@ -63,6 +63,31 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
   padding: 40px;
 }
 
+@media (max-width: 1280px) {
+  .container-box {
+    padding: 36px;
+  }
+}
+@media (max-width: 1024px) {
+  .container-box {
+    padding: 32px;
+  }
+}
+@media (max-width: 748px) {
+  .container-box {
+    padding: 28px;
+  }
+}
+@media (max-width: 524px) {
+  .container-box {
+    padding: 24px;
+  }
+}
+@media (max-width: 360px) {
+  .container-box {
+    padding: 20px;
+  }
+}
 .index-hero img {
   display: flex;
   flex-direction: column;
@@ -73,6 +98,9 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .index-hero-title {
   display: flex;
   justify-content: space-between;
+}
+.index-hero-title p {
+  width: 100%;
 }
 .index-hero-title p:nth-child(2) {
   text-align: end;
@@ -125,11 +153,16 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
   display: flex;
   gap: 24px;
 }
-.index-work-title a {
+
+.index-work-button {
+  display: flex;
+  gap: 24px;
+}
+.index-work-button a {
   color: #FFFFFF;
   text-decoration: none;
 }
-.index-work-title a:hover {
+.index-work-button a:hover {
   color: #EEE73C;
 }
 
@@ -186,4 +219,26 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 }
 .index-footer-socmed a:hover {
   color: #EEE73C;
+}
+
+@media (max-width: 748px) {
+  .index-hero-title {
+    flex-wrap: wrap;
+  }
+  .index-work-list {
+    flex-direction: column;
+  }
+  .index-footer {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 524px) {
+  .index-hero-title p, .index-footer p, .index-footer a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .index-work-title {
+    gap: 4px;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=main.css.map */
