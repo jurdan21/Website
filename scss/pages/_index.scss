@@ -13,7 +13,7 @@
 
 .index-hero-title {
     @include flex-space-between;
-    gap: 4px;
+    flex-wrap: wrap;
 }
 
 // section: image
@@ -22,6 +22,8 @@
     width: 100%;
     height: 560px;
     background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 50%), url('https://res.cloudinary.com/dirms5hch/image/upload/v1676470993/img-primary/hero-section-img_uou5vm.jpg');
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -41,16 +43,19 @@
 // section: intro
 .index-intro {
     margin-top: 24px;
-    margin-bottom: 64px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     h1 {max-width: 724px;}
 
     a {
         color: $neon-base;
         text-decoration: none;
-    }a:hover {
+    }
+    
+    a:hover {
         color: $neon-darker;
     }
 }
@@ -58,14 +63,14 @@
 .index-intro-skill {
     display: flex;
     justify-content: space-between;
-    gap: 80px;
+    gap: 24px;
 
     h2 {color: $black-lightest;}
 }
 
 // section: work
 .index-work {
-    margin-top: 64px;
+    margin-top: 80px;
 }
 
 .index-work-title {
@@ -96,7 +101,7 @@
 }
 
 .index-work-item {
-    width: 50%;
+    width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
 
@@ -107,8 +112,8 @@
 
 // section: contact
 .index-contact {
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
     h4 {
         margin-left: auto;
@@ -121,8 +126,9 @@
 .index-contact-title {
     display: flex;
     justify-content: end;
+    flex-wrap: wrap;
     gap: 24px;
-    margin-bottom: 64px;
+    margin-bottom: 80px;
 
     a {
         color: $neon-base;
@@ -139,6 +145,7 @@
     padding-top: 32px;
     border-top: 1px solid $divider;
     @include flex-space-between;
+    flex-wrap: wrap;
 
     a {
         color: $white;
@@ -147,5 +154,103 @@
 
     a:hover {
         color: $neon-base;
+    }
+}
+
+// responsive configuration
+@include max-width-1280px {
+    .index-intro {
+        gap: 64px;
+    }
+
+    .index-intro-skill {
+        flex-direction: column;
+        justify-content: normal;
+    }
+}
+
+@include max-width-1024px {
+    .index-intro {
+        h1 {
+            font-size: 32px;
+            line-height: 44px;
+            max-width: 640px;
+        }
+    }
+}
+
+@include max-width-748px {
+    .index-img-button {
+        margin-right: 24px;
+    }
+
+    .index-intro {
+        h1 {
+            font-size: 28px;
+            line-height: 40px;
+            max-width: 580px;
+        }
+    }
+
+    .index-work-title {
+        .index-work-button {
+            gap: 12px;
+        }
+
+        h3, a {
+            font-size: 52px;
+            line-height: 60px;
+            
+        }
+
+        img {
+            width: 56px;
+        }
+    }
+
+    .index-work-list {
+        flex-direction: column;
+    }
+
+    .index-contact {
+        h4 {
+            font-size: 52px;
+            line-height: 60px;
+        }
+    }
+}
+
+@include max-width-428px {
+    .index-hero img {
+        margin-top: 24px;
+    }
+
+    .index-img-button {
+        margin-right: 16px;
+    }
+
+    .index-work-title {
+        h3, a {
+            font-size: 36px;
+            line-height: 44px;
+            text-align: start;
+        }
+
+        img {
+            width: 44px;
+        }
+    }
+
+    .index-contact-title {
+        flex-direction: column;
+        gap: 0px;   
+    }
+
+    .index-contact {
+        h4 {
+            font-size: 36px;
+            line-height: 44px;
+            text-align: start;
+        }
     }
 }

@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .index-hero-title {
   display: flex;
   justify-content: space-between;
-  gap: 4px;
+  flex-wrap: wrap;
 }
 
 .index-img {
@@ -92,6 +92,8 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
   width: 100%;
   height: 560px;
   background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 50%), url("https://res.cloudinary.com/dirms5hch/image/upload/v1676470993/img-primary/hero-section-img_uou5vm.jpg");
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -111,9 +113,10 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .index-intro {
   margin-top: 24px;
-  margin-bottom: 64px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .index-intro h1 {
   max-width: 724px;
@@ -129,14 +132,14 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .index-intro-skill {
   display: flex;
   justify-content: space-between;
-  gap: 80px;
+  gap: 24px;
 }
 .index-intro-skill h2 {
   color: #808080;
 }
 
 .index-work {
-  margin-top: 64px;
+  margin-top: 80px;
 }
 
 .index-work-title h3 {
@@ -165,7 +168,7 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 }
 
 .index-work-item {
-  width: 50%;
+  width: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
 }
@@ -174,8 +177,8 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 }
 
 .index-contact {
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .index-contact h4 {
   margin-left: auto;
@@ -187,8 +190,9 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .index-contact-title {
   display: flex;
   justify-content: end;
+  flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 64px;
+  margin-bottom: 80px;
 }
 .index-contact-title a {
   color: #A0F046;
@@ -203,6 +207,7 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
   border-top: 1px solid #323232;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .index-footer a {
   color: #FFFFFF;
@@ -210,4 +215,73 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 }
 .index-footer a:hover {
   color: #A0F046;
+}
+
+@media (max-width: 1280px) {
+  .index-intro {
+    gap: 64px;
+  }
+  .index-intro-skill {
+    flex-direction: column;
+    justify-content: normal;
+  }
+}
+@media (max-width: 1024px) {
+  .index-intro h1 {
+    font-size: 32px;
+    line-height: 44px;
+    max-width: 640px;
+  }
+}
+@media (max-width: 748px) {
+  .index-img-button {
+    margin-right: 24px;
+  }
+  .index-intro h1 {
+    font-size: 28px;
+    line-height: 40px;
+    max-width: 580px;
+  }
+  .index-work-title .index-work-button {
+    gap: 12px;
+  }
+  .index-work-title h3, .index-work-title a {
+    font-size: 52px;
+    line-height: 60px;
+  }
+  .index-work-title img {
+    width: 56px;
+  }
+  .index-work-list {
+    flex-direction: column;
+  }
+  .index-contact h4 {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 428px) {
+  .index-hero img {
+    margin-top: 24px;
+  }
+  .index-img-button {
+    margin-right: 16px;
+  }
+  .index-work-title h3, .index-work-title a {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: start;
+  }
+  .index-work-title img {
+    width: 44px;
+  }
+  .index-contact-title {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .index-contact h4 {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: start;
+  }
 }/*# sourceMappingURL=main.css.map */
