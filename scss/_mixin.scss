@@ -17,10 +17,6 @@
     @media (max-width: 748px) {@content;}
 }
 
-@mixin max-width-524px {
-    @media (max-width: 524px) {@content;}
-}
-
-@mixin max-width-360px {
-    @media (max-width: 360px) {@content;}
+@mixin max-width-428px {
+    @media (max-width: 428px) {@content;}
 }

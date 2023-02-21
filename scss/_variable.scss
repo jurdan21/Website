@@ -1,15 +1,21 @@
-// color collection: black
+// color: black
 $black-base: #000000;
 $black-light: #2B2B2B;
 $black-lighter: #555555;
 $black-lightest: #808080;
 
-// color collection: extra-color
+// color: neon
+$neon-darkest: #40601C;
+$neon-darker: #60902A;
+$neon-dark: #80C038;
+$neon-base: #A0F046;
+$neon-light: #BDF57E;
+$neon-lighter: #D9F9B5;
+$neon-lightest: #F6FEED;
+
+// color: general
 $white: #FFFFFF;
-$yellow: #EEE73C;
+$divider: #323232;
 
-// typography
-$letter-spacing: 0.4px;
-
-// spacing
-$border-radius: 16px;
+// typography 
+$letter-spacing: 0.5px;

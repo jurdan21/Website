@@ -26,69 +26,48 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 }
 
 .extralight {font-weight: 200; font-style: normal;}
-
-.text-12px {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: $letter-spacing;
-}
+.text-14px, .text-16px, .text-24px, .text-36px {letter-spacing: $letter-spacing;}
 
 .text-14px {
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: $letter-spacing;
 }
 
 .text-16px {
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: $letter-spacing;
 }
 
-.text-20px {
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: $letter-spacing;
+.text-24px {
+    font-size: 24px;
+    line-height: 32px;
 }
 
-.text-32px {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: $letter-spacing;
+.text-36px {
+    font-size: 36px;
+    line-height: 48px;
 }
 
-// layouting 
+.text-72px {
+    font-size: 72px;
+    line-height: 80px;
+}
+
+// layouting
 .container-box {
     max-width: 100%;
-    padding: 40px;
+    padding: 32px;
 }
 
-@include max-width-1280px {
-    .container-box {
-        padding: 36px;
-    }
-}
-
+// responsive configuration
 @include max-width-1024px {
-    .container-box {
-       padding: 32px;
-    }
-}
-
-@include max-width-748px {
-    .container-box {
-        padding: 28px;
-    }
-}
-
-@include max-width-524px {
     .container-box {
         padding: 24px;
     }
 }
 
-@include max-width-360px {
+@include max-width-428px {
     .container-box {
-        padding: 20px;
+        padding: 16px;
     }
 }
