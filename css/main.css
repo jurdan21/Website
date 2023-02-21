@@ -154,6 +154,7 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 }
 .index-work-button a:hover {
   color: #60902A;
+  cursor: pointer;
 }
 
 .index-work-list {
@@ -174,6 +175,7 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .index-contact {
   margin-top: 64px;
+  margin-bottom: 64px;
 }
 .index-contact h4 {
   margin-left: auto;
@@ -194,4 +196,18 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 }
 .index-contact-title a:hover {
   color: #60902A;
+}
+
+.index-footer {
+  padding-top: 32px;
+  border-top: 1px solid #323232;
+  display: flex;
+  justify-content: space-between;
+}
+.index-footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.index-footer a:hover {
+  color: #A0F046;
 }/*# sourceMappingURL=main.css.map */

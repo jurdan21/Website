@@ -84,6 +84,7 @@
 
     a:hover {
         color: $neon-darker;
+        cursor: pointer;
     }
 }
 
@@ -107,6 +108,7 @@
 // section: contact
 .index-contact {
     margin-top: 64px;
+    margin-bottom: 64px;
 
     h4 {
         margin-left: auto;
@@ -129,5 +131,21 @@
 
     a:hover {
         color: $neon-darker;
+    }
+}
+
+// section: footer
+.index-footer {
+    padding-top: 32px;
+    border-top: 1px solid $divider;
+    @include flex-space-between;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $neon-base;
     }
 }
