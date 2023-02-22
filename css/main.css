@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .index-img-button {
   margin-right: 32px;
-  padding: 24px 8px;
+  padding: 16px 4px;
   border: 1px solid #FFFFFF;
   border-radius: 666px;
   writing-mode: vertical-rl;
@@ -171,9 +171,36 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
   width: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
+  position: relative;
+  color: #FFFFFF;
 }
 .index-work-item img {
   width: 100%;
+}
+
+.index-work-detail {
+  display: none;
+  position: absolute;
+  padding: 24px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56));
+  justify-content: space-between;
+  align-items: end;
+  gap: 12px;
+}
+.index-work-detail h5 {
+  width: 100%;
+}
+
+.index-work-item:hover .index-work-detail {
+  display: inline-flex;
+}
+
+.label-md {
+  padding: 4px 16px;
+  border: 1px solid #FFFFFF;
+  border-radius: 666px;
 }
 
 .index-contact {
@@ -237,17 +264,12 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
   .index-img-button {
     margin-right: 24px;
   }
-  .index-intro h1 {
-    font-size: 28px;
-    line-height: 40px;
-    max-width: 580px;
-  }
   .index-work-title .index-work-button {
     gap: 12px;
   }
   .index-work-title h3, .index-work-title a {
-    font-size: 52px;
-    line-height: 60px;
+    font-size: 56px;
+    line-height: 64px;
   }
   .index-work-title img {
     width: 56px;
@@ -256,8 +278,8 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
     flex-direction: column;
   }
   .index-contact h4 {
-    font-size: 52px;
-    line-height: 60px;
+    font-size: 56px;
+    line-height: 64px;
   }
 }
 @media (max-width: 428px) {
@@ -267,6 +289,11 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
   .index-img-button {
     margin-right: 16px;
   }
+  .index-intro h1 {
+    font-size: 28px;
+    line-height: 40px;
+    max-width: 580px;
+  }
   .index-work-title h3, .index-work-title a {
     font-size: 36px;
     line-height: 44px;
@@ -274,6 +301,9 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
   }
   .index-work-title img {
     width: 44px;
+  }
+  .index-work-list {
+    gap: 16px;
   }
   .index-contact-title {
     flex-direction: column;
