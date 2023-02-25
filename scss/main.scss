@@ -1,0 +1,14 @@
+// foundation
+@import 'variable.scss';
+@import 'mixin.scss';
+@import 'layouting.scss';
+@import 'typography.scss';
+
+// component
+@import 'component/footer.scss';
+@import 'component/label.scss';
+@import 'component/button.scss';
+
+// pages
+@import 'pages/onboarding.scss';
+@import 'pages/index.scss';
