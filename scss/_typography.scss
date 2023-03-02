@@ -12,10 +12,12 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 // font-weight
 .extralight {font-weight: 200; font-style: normal;}
 
-// font-scale:default
+// font-size:default
 .text-12px {font-size: 12px; line-height: 16px;}
 .text-14px {font-size: 14px; line-height: 20px;}
-.text-18px {font-size: 18px; line-height: 24px;}
+.text-16px {font-size: 16px; line-height: 24px;}
+.text-18px {font-size: 18px; line-height: 28px;}
+.text-20px {font-size: 20px; line-height: 32px;}
 .text-24px {font-size: 24px; line-height: 36px;}
 .text-28px {font-size: 28px; line-height: 40px;}
 .text-32px {font-size: 32px; line-height: 44px;}
@@ -26,5 +28,6 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .text-64px {font-size: 64px; line-height: 80px;}
 .text-72px {font-size: 72px; line-height: 92px;}
 
-// font-scale:display
-.display-xl {font-size: 112px; line-height: 116px;}
+// font-size:display
+.display-xl {font-size: 228px; line-height: 220px;}
+.display-lg {font-size: 112px; line-height: 124px;}

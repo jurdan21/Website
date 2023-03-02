@@ -2,13 +2,3 @@
 @import '../mixin.scss';
 @import '../typography.scss';
 @import '../layouting.scss';
-
-.btn-link--lime {
-    color: $lime-base;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.btn-link--lime:hover {
-    color: $lime-light;
-}

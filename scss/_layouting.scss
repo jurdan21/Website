@@ -17,12 +17,12 @@ body {
     scrollbar-width: none;
 }
 
+// layouting-configuration
 .container-box {
     max-width: 100%;
     padding: 24px;
 }
 
-// basic-layout: display-flex
 .flex-auto {
     display: flex;
     justify-content: space-between;

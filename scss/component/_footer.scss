@@ -2,15 +2,3 @@
 @import '../mixin.scss';
 @import '../typography.scss';
 @import '../layouting.scss';
-
-.footer-dark {
-    a {color: $white;}
-    a:hover {color: $lime-base;}
-}
-
-.footer-socmed {
-    display: flex;
-    gap: 16px;
-
-    a {text-decoration: none;}
-}
