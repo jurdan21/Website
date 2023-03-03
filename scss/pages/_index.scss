@@ -19,7 +19,7 @@
     h1:nth-child(2) {text-align: end;}
 }
 
-.index-hero--intro {
+.index-hero-intro {
     margin-top: 80px;
     align-items: end;
 
@@ -28,6 +28,6 @@
         max-width: 336px;
     }
 
-    p {color: $index-grey;}
+    p {color: $color-grey-dark;}
 }
 

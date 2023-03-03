@@ -3,17 +3,25 @@
 @import '../typography.scss';
 @import '../layouting.scss';
 
-.btn-line--lg {
+//button-size
+.btn-extralarge {
     height: 108px;
-    border: 1px solid $index-grey;
-    border-radius: 666px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: $rounded;
+    @include flex-centered;
     padding-left: 80px;
     padding-right: 80px;
 }
 
-.btn-line--lg:hover {
-    border: 1px solid $index-yellow;
+//button-in-background-dark-edition
+.btn-line-dark {
+    border: 1px solid $color-grey-dark;
+}
+
+.btn-line-dark:hover {
+    border-color: $color-yellow-dark;
+}
+
+.link-dark {
+    cursor: pointer;
+    color: $white;
 }

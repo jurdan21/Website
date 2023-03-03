@@ -533,19 +533,27 @@ body {
   flex-direction: column;
 }
 
-.btn-line--lg {
+.btn-extralarge {
   height: 108px;
-  border: 1px solid #7D7D7D;
   border-radius: 666px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding-left: 80px;
   padding-right: 80px;
 }
 
-.btn-line--lg:hover {
-  border: 1px solid #F7F202;
+.btn-line-dark {
+  border: 1px solid #7D7D7D;
+}
+
+.btn-line-dark:hover {
+  border-color: #F7F202;
+}
+
+.link-dark {
+  cursor: pointer;
+  color: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, small, span {
@@ -960,14 +968,14 @@ body {
   text-align: end;
 }
 
-.index-hero--intro {
+.index-hero-intro {
   margin-top: 80px;
   align-items: end;
 }
-.index-hero--intro h2 {
+.index-hero-intro h2 {
   text-align: justify;
   max-width: 336px;
 }
-.index-hero--intro p {
+.index-hero-intro p {
   color: #7D7D7D;
 }/*# sourceMappingURL=main.css.map */
