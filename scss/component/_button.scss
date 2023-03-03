@@ -2,3 +2,18 @@
 @import '../mixin.scss';
 @import '../typography.scss';
 @import '../layouting.scss';
+
+.btn-line--lg {
+    height: 108px;
+    border: 1px solid $index-grey;
+    border-radius: 666px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.btn-line--lg:hover {
+    border: 1px solid $index-yellow;
+}

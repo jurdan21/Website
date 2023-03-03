@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body {
 
 .container-box {
   max-width: 100%;
-  padding: 24px;
+  padding: 48px;
 }
 
 .flex-auto {
@@ -47,6 +47,11 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .extralight {
   font-weight: 200;
+  font-style: normal;
+}
+
+.light {
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -123,11 +128,13 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .display-xl {
   font-size: 228px;
   line-height: 220px;
+  letter-spacing: -8px;
 }
 
 .display-lg {
   font-size: 112px;
   line-height: 124px;
+  letter-spacing: -2px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, small, span {
@@ -141,6 +148,11 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .extralight {
   font-weight: 200;
+  font-style: normal;
+}
+
+.light {
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -217,11 +229,13 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .display-xl {
   font-size: 228px;
   line-height: 220px;
+  letter-spacing: -8px;
 }
 
 .display-lg {
   font-size: 112px;
   line-height: 124px;
+  letter-spacing: -2px;
 }
 
 * {
@@ -242,7 +256,7 @@ body {
 
 .container-box {
   max-width: 100%;
-  padding: 24px;
+  padding: 48px;
 }
 
 .flex-auto {
@@ -266,6 +280,11 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .extralight {
   font-weight: 200;
+  font-style: normal;
+}
+
+.light {
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -342,11 +361,13 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .display-xl {
   font-size: 228px;
   line-height: 220px;
+  letter-spacing: -8px;
 }
 
 .display-lg {
   font-size: 112px;
   line-height: 124px;
+  letter-spacing: -2px;
 }
 
 * {
@@ -367,7 +388,7 @@ body {
 
 .container-box {
   max-width: 100%;
-  padding: 24px;
+  padding: 48px;
 }
 
 .flex-auto {
@@ -391,6 +412,11 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .extralight {
   font-weight: 200;
+  font-style: normal;
+}
+
+.light {
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -467,11 +493,13 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .display-xl {
   font-size: 228px;
   line-height: 220px;
+  letter-spacing: -8px;
 }
 
 .display-lg {
   font-size: 112px;
   line-height: 124px;
+  letter-spacing: -2px;
 }
 
 * {
@@ -492,7 +520,7 @@ body {
 
 .container-box {
   max-width: 100%;
-  padding: 24px;
+  padding: 48px;
 }
 
 .flex-auto {
@@ -503,6 +531,21 @@ body {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.btn-line--lg {
+  height: 108px;
+  border: 1px solid #7D7D7D;
+  border-radius: 666px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.btn-line--lg:hover {
+  border: 1px solid #F7F202;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, small, span {
@@ -516,6 +559,11 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .extralight {
   font-weight: 200;
+  font-style: normal;
+}
+
+.light {
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -592,11 +640,13 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .display-xl {
   font-size: 228px;
   line-height: 220px;
+  letter-spacing: -8px;
 }
 
 .display-lg {
   font-size: 112px;
   line-height: 124px;
+  letter-spacing: -2px;
 }
 
 * {
@@ -617,7 +667,7 @@ body {
 
 .container-box {
   max-width: 100%;
-  padding: 24px;
+  padding: 48px;
 }
 
 .flex-auto {
@@ -641,6 +691,11 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .extralight {
   font-weight: 200;
+  font-style: normal;
+}
+
+.light {
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -717,11 +772,13 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .display-xl {
   font-size: 228px;
   line-height: 220px;
+  letter-spacing: -8px;
 }
 
 .display-lg {
   font-size: 112px;
   line-height: 124px;
+  letter-spacing: -2px;
 }
 
 * {
@@ -742,7 +799,7 @@ body {
 
 .container-box {
   max-width: 100%;
-  padding: 24px;
+  padding: 48px;
 }
 
 .flex-auto {
@@ -766,6 +823,11 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 
 .extralight {
   font-weight: 200;
+  font-style: normal;
+}
+
+.light {
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -842,11 +904,13 @@ h1, h2, h3, h4, h5, h6, p, a, small, span {
 .display-xl {
   font-size: 228px;
   line-height: 220px;
+  letter-spacing: -8px;
 }
 
 .display-lg {
   font-size: 112px;
   line-height: 124px;
+  letter-spacing: -2px;
 }
 
 * {
@@ -867,7 +931,7 @@ body {
 
 .container-box {
   max-width: 100%;
-  padding: 24px;
+  padding: 48px;
 }
 
 .flex-auto {
@@ -878,4 +942,32 @@ body {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.index-img {
+  max-width: 384px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  display: flex;
+}
+
+.index-hero {
+  margin-top: 64px;
+}
+.index-hero h1:nth-child(2) {
+  text-align: end;
+}
+
+.index-hero--intro {
+  margin-top: 80px;
+  align-items: end;
+}
+.index-hero--intro h2 {
+  text-align: justify;
+  max-width: 336px;
+}
+.index-hero--intro p {
+  color: #7D7D7D;
 }/*# sourceMappingURL=main.css.map */

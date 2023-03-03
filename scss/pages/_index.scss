@@ -2,3 +2,32 @@
 @import '../mixin.scss';
 @import '../typography.scss';
 @import '../layouting.scss';
+
+.index-img {
+    max-width: 384px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: flex;
+}
+
+// section:index-hero
+.index-hero {
+    margin-top: 64px;
+
+    h1:nth-child(2) {text-align: end;}
+}
+
+.index-hero--intro {
+    margin-top: 80px;
+    align-items: end;
+
+    h2 {
+        text-align: justify;
+        max-width: 336px;
+    }
+
+    p {color: $index-grey;}
+}
+
