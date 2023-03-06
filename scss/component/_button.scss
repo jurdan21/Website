@@ -3,25 +3,26 @@
 @import '../typography.scss';
 @import '../layouting.scss';
 
-//button-size
-.btn-extralarge {
-    height: 108px;
-    border-radius: $rounded;
+//custom-banget-anjingggggg
+.btn-index-arrow {
+    height: 124px;
+    width: 264px;
+    border: 1px solid $black-700;
+    border-radius: 666px;
     @include flex-centered;
-    padding-left: 80px;
-    padding-right: 80px;
 }
 
-//button-in-background-dark-edition
-.btn-line-dark {
-    border: 1px solid $color-grey-dark;
+.btn-index-arrow:hover {
+    border-color: $white;
 }
 
-.btn-line-dark:hover {
-    border-color: $color-yellow-dark;
+.btn-link-lime {
+    color: $lime-500;
+    text-decoration: none;
 }
 
-.link-dark {
-    cursor: pointer;
+
+.btn-link-white {
     color: $white;
+    text-decoration: none;
 }

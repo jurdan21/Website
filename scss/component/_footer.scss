@@ -2,3 +2,16 @@
 @import '../mixin.scss';
 @import '../typography.scss';
 @import '../layouting.scss';
+
+.footer {
+    margin-top: $section-spacing-xl;
+
+    p {
+        color: $black-600;
+    }
+}
+
+.footer-socmed {
+    display: flex;
+    gap: 16px;
+}

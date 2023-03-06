@@ -1,0 +1,9 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+@import '../typography.scss';
+@import '../layouting.scss';
+
+.divider-dark {
+    border-bottom: 1px solid $black-700;
+    width: 100%;
+}
