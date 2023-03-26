@@ -1,0 +1,92 @@
+@import '../abstract/base.scss';
+
+// section: hero
+.home-hero {
+    margin-top: 32px;
+    align-items: end;
+    margin-bottom: $spacing-section;
+    gap: $spacing-section;
+
+    .home-hero-img {
+        width: 328px;
+        border-radius: 666px;
+    }
+}
+
+.home-hero-detail {
+    width: 100%;
+    box-sizing: border-box;
+
+    .home-hero-title {
+        width: 100%;
+        margin-bottom: 120px;
+
+        h1:nth-child(2) {
+            text-align: end;
+        }
+    }
+}
+
+.home-hero-intro {
+    align-items: end;
+
+    p {
+        max-width: 308px;
+        text-align: justify;
+    }
+}
+
+// section: latest-work
+.home-work {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 1px solid map-get($black, 500);
+    border-bottom: 1px solid map-get($black, 500);
+    margin-bottom: $spacing-section;
+}
+
+.home-work-title {
+    align-items: start;
+    margin-bottom: 32px;
+
+    a {
+        text-decoration: none;
+        gap: 8px;
+
+        img {
+            width: 20px;
+        }
+    }
+}
+
+.home-work-list {
+    gap: 32px;
+    max-width: 100%;
+}
+
+.home-work-item {
+    width: 100%;
+    text-decoration: none;
+    color: map-get($black, 900);
+
+    img {
+        aspect-ratio: 5/6;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.home-work-detail {
+    margin-top: 16px;
+    gap: 24px;
+
+    h1 {
+        width: 100%;
+        text-align: end;
+    }
+
+    span {
+        color: map-get($black, 700);
+        white-space: nowrap;
+    }
+}

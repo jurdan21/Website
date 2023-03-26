@@ -1,0 +1,16 @@
+@import '../abstract/base.scss';
+
+.flex-auto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-centered-horizontal {
+    display: flex;
+    align-items: center;
+}
