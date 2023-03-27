@@ -121,8 +121,8 @@ body {
 }
 
 .display-lg {
-  font-size: 140px;
-  line-height: 140px;
+  font-size: 156px;
+  line-height: 156px;
   letter-spacing: -6px;
 }
 
@@ -167,19 +167,24 @@ body {
   border-radius: 666px;
 }
 
+.loading-black {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #101010;
+}
+
 .home-hero {
   margin-top: 32px;
   align-items: end;
   margin-bottom: 120px;
-  gap: 120px;
 }
 .home-hero .home-hero-img {
   width: 328px;
-  border-radius: 666px;
+  border-radius: 666px 666px 0px 0px;
 }
 
 .home-hero-detail {
-  width: 100%;
+  width: 928px;
   box-sizing: border-box;
 }
 .home-hero-detail .home-hero-title {
@@ -228,16 +233,23 @@ body {
   text-decoration: none;
   color: #101010;
 }
-.home-work-item img {
+
+.home-work-img {
   aspect-ratio: 5/6;
+  overflow: hidden;
+}
+.home-work-img img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  transition: transform 0.25s;
 }
 
 .home-work-detail {
   margin-top: 16px;
   gap: 24px;
+  transition: gap 0.25s;
 }
 .home-work-detail h1 {
   width: 100%;
@@ -246,4 +258,11 @@ body {
 .home-work-detail span {
   color: #707070;
   white-space: nowrap;
+}
+
+.home-work-item:hover .home-work-detail {
+  gap: 32px;
+}
+.home-work-item:hover .home-work-img img {
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */

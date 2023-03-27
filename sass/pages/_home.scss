@@ -5,16 +5,15 @@
     margin-top: 32px;
     align-items: end;
     margin-bottom: $spacing-section;
-    gap: $spacing-section;
 
     .home-hero-img {
         width: 328px;
-        border-radius: 666px;
+        border-radius: 666px 666px 0px 0px;
     }
 }
 
 .home-hero-detail {
-    width: 100%;
+    width: 928px;
     box-sizing: border-box;
 
     .home-hero-title {
@@ -68,17 +67,24 @@
     width: 100%;
     text-decoration: none;
     color: map-get($black, 900);
+}
+
+.home-work-img {
+    aspect-ratio: 5/6;
+    overflow: hidden;
 
     img {
-        aspect-ratio: 5/6;
-        object-fit: cover;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.25s;
     }
 }
 
 .home-work-detail {
     margin-top: 16px;
     gap: 24px;
+    transition: gap 0.25s;
 
     h1 {
         width: 100%;
@@ -88,5 +94,17 @@
     span {
         color: map-get($black, 700);
         white-space: nowrap;
+    }
+}
+
+.home-work-item:hover {
+    .home-work-detail {
+        gap: 32px;
+    }
+
+    .home-work-img {
+        img {
+            transform: scale(1.1);
+        }
     }
 }
