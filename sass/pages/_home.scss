@@ -5,6 +5,7 @@
     margin-top: 32px;
     align-items: end;
     margin-bottom: $spacing-section;
+    gap: 32px;
 
     .home-hero-img {
         width: 328px;
@@ -13,7 +14,7 @@
 }
 
 .home-hero-detail {
-    width: 928px;
+    width: 896px;
     box-sizing: border-box;
 
     .home-hero-title {
@@ -105,6 +106,65 @@
     .home-work-img {
         img {
             transform: scale(1.1);
+        }
+    }
+}
+
+//responsive-configuration
+@include max-width-lg {
+    .home-hero {
+        margin-top: $spacing-section;
+        flex-direction: column;
+        gap: $spacing-section;
+        align-items: center;
+    }
+
+    .home-hero-detail {
+        width: 100%;
+    }
+}
+
+@include max-width-md {
+    .home-hero-title {
+        h1 {
+            font-size: 124px;
+            line-height: 124px;
+            letter-spacing: -4px;
+        }
+
+        h2 {
+            font-size: 56px;
+            line-height: 72px;
+        }
+    }
+
+    .home-hero-intro {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+
+        p {
+            max-width: 320px;
+            text-align: center;
+        }
+    }
+
+    .home-work-list {
+        flex-direction: column;
+    }
+}
+
+@include max-width-sm {
+    .home-hero-title {
+        h1 {
+            font-size: 72px;
+            line-height: 72px;
+            letter-spacing: 0.1px;
+        }
+
+        h2 {
+            font-size: 40px;
+            line-height: 52px;
         }
     }
 }

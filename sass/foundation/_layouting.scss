@@ -5,3 +5,23 @@
     padding: 32px;
     box-sizing: border-box;
 }
+
+//responsive-configuration
+@include max-width-xl {
+    .container-box {
+        padding: 28px;
+    }
+}
+
+@include max-width-lg {
+    .container-box {
+        padding: 24px;
+    }
+}
+
+@include max-width-md {
+    .container-box {
+        padding: 20px;
+    }
+}
+
