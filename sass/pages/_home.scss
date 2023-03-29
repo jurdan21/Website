@@ -10,11 +10,17 @@
     .home-hero-img {
         width: 328px;
         border-radius: 666px 666px 0px 0px;
+        transition: border-radius 0.25s;
+        cursor: pointer;
+    }
+
+    .home-hero-img:hover {
+        border-radius: 666px;
     }
 }
 
 .home-hero-detail {
-    width: 896px;
+    width: 928px;
     box-sizing: border-box;
 
     .home-hero-title {
@@ -78,13 +84,13 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.25s;
+        transition: transform 0.5s;
     }
 }
 
 .home-work-detail {
     margin-top: 16px;
-    gap: 24px;
+    gap: 16px;
     transition: gap 0.25s;
 
     h1 {
@@ -100,7 +106,7 @@
 
 .home-work-item:hover {
     .home-work-detail {
-        gap: 32px;
+        gap: 24px;
     }
 
     .home-work-img {
@@ -110,13 +116,13 @@
     }
 }
 
-//responsive-configuration
+//responsive
 @include max-width-lg {
     .home-hero {
         margin-top: $spacing-section;
         flex-direction: column;
-        gap: $spacing-section;
         align-items: center;
+        gap: $spacing-section;
     }
 
     .home-hero-detail {
@@ -127,8 +133,8 @@
 @include max-width-md {
     .home-hero-title {
         h1 {
-            font-size: 124px;
-            line-height: 124px;
+            font-size: 120px;
+            line-height: 120px;
             letter-spacing: -4px;
         }
 
@@ -140,11 +146,11 @@
 
     .home-hero-intro {
         flex-direction: column;
-        gap: 40px;
         align-items: center;
+        gap: 40px;
 
         p {
-            max-width: 320px;
+            max-width: 360px;
             text-align: center;
         }
     }
@@ -159,6 +165,7 @@
         h1 {
             font-size: 72px;
             line-height: 72px;
+            font-weight: 300;
             letter-spacing: 0.1px;
         }
 
