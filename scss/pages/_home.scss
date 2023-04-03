@@ -1,0 +1,183 @@
+@import '../foundation/variable.scss';
+@import '../foundation/mixin.scss';
+
+//section: hero
+.home-hero {
+    margin-top: 120px;
+    align-items: end;
+    gap: 120px;
+}
+
+.home-hero-img {
+    border-radius: 666px 666px 0px 0px;
+    transition: border-radius ease 0.25s;
+    cursor: pointer;
+}
+
+.home-hero-img:hover {
+    border-radius: 666px;
+}
+
+.home-hero-detail {
+    width: 100%;
+}
+
+.home-hero-title {
+    h1:nth-child(2) {
+        text-align: end;
+    }
+}
+
+.home-hero-intro {
+    margin-top: 120px;
+    align-items: end;
+
+    p {
+        text-align: justify;
+        max-width: 316px;
+    }
+}
+
+//section: work
+.home-work {
+    margin-top: $section-spacing;
+}
+
+.home-work-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid $grey-800;
+    border-bottom: 1px solid $grey-800;
+    align-items: start;
+}
+
+.home-work-link {
+    align-items: center;
+    gap: 12px;
+}
+
+.home-work-list {
+    margin-top: 80px;
+    gap: 32px;
+}
+
+.home-work-item {
+    width: 100%;
+    @include reset-tag-a;
+}
+
+.home-work-img {
+    overflow: hidden;
+    aspect-ratio: 5/6;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.25s;
+    }
+}
+
+.home-work-detail {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $grey-800;
+    gap: 16px;
+    transition: gap 0.25s;
+
+    h1 {
+        width: 100%;
+        text-align: end;
+        text-transform: uppercase;
+    }
+
+    span {
+        white-space: nowrap;
+    }
+}
+
+.home-work-item:hover {
+    .home-work-img {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+    .home-work-detail {
+        gap: 24px;
+    }
+}
+
+//section: contact
+.home-contact {
+    margin-top: $section-spacing;
+
+    h1 {
+        width: 920px;
+    }
+}
+
+//responsive-configuration
+@include max-width-1024px {
+    .home-hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
+    }
+}
+
+@include max-width-836px {
+    .home-hero-title {
+        h1 {@include display-148px;}
+    }
+
+    .home-hero-intro {
+        margin-top: 56px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        p {text-align: center;}
+    }
+
+    .home-work-list {
+        flex-direction: column;
+        gap: 56px;
+    }
+
+    .home-work-title {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .home-work-detail {
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        h1 {
+            text-align: start;
+        }
+    }
+
+    .home-work-item:hover { 
+        .home-work-detail {
+            gap: 16px;
+        }
+    }
+}
+
+@include max-width-428px {
+    .home-hero-title {
+        h1 {@include display-80px;}
+        h3 {@include text-32px;}
+    }  
+
+    .home-work-title {
+        h1 {@include text-56px;}
+    }
+
+    .home-work-detail {
+        h1 {@include text-24px;}
+    }
+}

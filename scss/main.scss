@@ -1,20 +1,17 @@
-//abstract
-@import 'abstract/base.scss';
-
 //foundation
-@import 'foundation/reset.scss';
-@import 'foundation/layouting.scss';
+@import 'foundation/variable.scss';
+@import 'foundation/mixin.scss';
 @import 'foundation/typography.scss';
-@import 'foundation/utilities.scss';
+@import 'foundation/layout.scss';
+@import 'foundation/reset.scss';
 
-//component 
+//component
 @import 'component/header.scss';
 @import 'component/footer.scss';
 @import 'component/button.scss';
 
 //pages
-@import 'pages/loading.scss';
 @import 'pages/home.scss';
-@import 'pages/about.scss';
 @import 'pages/work.scss';
+@import 'pages/about.scss';
 @import 'pages/contact.scss';

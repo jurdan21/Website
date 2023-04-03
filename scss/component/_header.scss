@@ -1,0 +1,24 @@
+@import '../foundation/variable.scss';
+@import '../foundation/mixin.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 666;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-light {
+    background-color: $white;
+}
+
+//responsive-configuration
+@include max-width-768px {
+    .header {
+        span {
+            display: none;
+        }
+    }
+}
