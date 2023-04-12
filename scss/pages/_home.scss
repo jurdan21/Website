@@ -2,182 +2,141 @@
 @import '../foundation/mixin.scss';
 
 //section: hero
-.home-hero {
-    margin-top: 120px;
-    align-items: end;
-    gap: 120px;
+.homeHero {
+    margin-top: 264px;
 }
 
-.home-hero-img {
-    border-radius: 666px 666px 0px 0px;
-    transition: border-radius ease 0.25s;
-    cursor: pointer;
+.homeHero-title {
+    margin-bottom: 96px;
 }
 
-.home-hero-img:hover {
-    border-radius: 666px;
-}
+.homeHero-title-detail {
+    @include flex-center-horizontal;
+    gap: 32px;
 
-.home-hero-detail {
-    width: 100%;
-}
-
-.home-hero-title {
-    h1:nth-child(2) {
-        text-align: end;
+    h2 {
+        color: map-get($black , 700);
     }
 }
 
-.home-hero-intro {
-    margin-top: 120px;
+.homeHero-intro {
     align-items: end;
+}
+
+.homeHero-intro-about {
+    max-width: 508px;
+    gap: 32px;
 
     p {
-        text-align: justify;
-        max-width: 316px;
+        width: 100%;
+    }
+}
+
+.homeHero-intro-about-title {
+    @include flex-center-horizontal;
+    gap: 8px;
+
+    span {
+        color: map-get($black, 700);
     }
 }
 
 //section: work
-.home-work {
+.homeWork {
     margin-top: $section-spacing;
+    padding-top: 24px;
+    border-top: 1px solid map-get($grey, 700);
+    gap: 24px;
 }
 
-.home-work-title {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-top: 1px solid $grey-800;
-    border-bottom: 1px solid $grey-800;
-    align-items: start;
+.homeWork-header {
+    align-items: end;
+    margin-bottom: 24px;
 }
 
-.home-work-link {
-    align-items: center;
-    gap: 12px;
-}
-
-.home-work-list {
-    margin-top: 80px;
-    gap: 32px;
-}
-
-.home-work-item {
-    width: 100%;
-    @include reset-tag-a;
-}
-
-.home-work-img {
-    overflow: hidden;
-    aspect-ratio: 5/6;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.25s;
-    }
-}
-
-.home-work-detail {
+.homeWork-header-title {
     display: flex;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid $grey-800;
+    align-items: start;
     gap: 16px;
-    transition: gap 0.25s;
-
-    h1 {
-        width: 100%;
-        text-align: end;
-        text-transform: uppercase;
-    }
 
     span {
-        white-space: nowrap;
+        color: map-get($black, 700);
     }
 }
 
-.home-work-item:hover {
-    .home-work-img {
+.homeWork-header-action {
+    gap: 8px;
+    @include flex-center-horizontal;
+}
+
+.homeWork-list {
+    gap: 24px;
+}
+
+.homeWork-2column {
+    gap: 24px;
+
+    .homeWork-list-item {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 16px;
+        aspect-ratio: 18/17;
+        
         img {
-            transform: scale(1.1);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
+}
 
-    .home-work-detail {
-        gap: 24px;
+.homeWork-1column {
+    .homeWork-list-item {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 16px;
+        aspect-ratio: 18/9;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
 
 //section: contact
-.home-contact {
+.homeContact {
+    padding: 48px;
+    border-radius: 16px;
+    background-color: map-get($grey, 500);
     margin-top: $section-spacing;
+    margin-bottom: $section-spacing;
+    gap: 120px;
+}
 
-    h1 {
-        width: 920px;
+.homeContact-title {
+    gap: 4px;
+
+    p {color: map-get($black, 700);}
+}
+
+.homeContact-action {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+
+    img {
+        width: 40px;
     }
 }
 
-//responsive-configuration
-@include max-width-1024px {
-    .home-hero {
-        flex-direction: column;
-        align-items: center;
-        gap: 56px;
-    }
+.homeContact-action-text {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+
+    span {color: map-get($black, 700);}
 }
 
-@include max-width-836px {
-    .home-hero-title {
-        h1 {@include display-148px;}
-    }
-
-    .home-hero-intro {
-        margin-top: 56px;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
-
-        p {text-align: center;}
-    }
-
-    .home-work-list {
-        flex-direction: column;
-        gap: 56px;
-    }
-
-    .home-work-title {
-        flex-direction: column;
-        gap: 4px;
-    }
-    
-    .home-work-detail {
-        padding-top: 8px;
-        padding-bottom: 8px;
-
-        h1 {
-            text-align: start;
-        }
-    }
-
-    .home-work-item:hover { 
-        .home-work-detail {
-            gap: 16px;
-        }
-    }
-}
-
-@include max-width-428px {
-    .home-hero-title {
-        h1 {@include display-80px;}
-        h3 {@include text-32px;}
-    }  
-
-    .home-work-title {
-        h1 {@include text-56px;}
-    }
-
-    .home-work-detail {
-        h1 {@include text-24px;}
-    }
-}

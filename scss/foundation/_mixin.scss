@@ -1,33 +1,40 @@
 @import 'variable.scss';
 
+//font-size: default
+@mixin text-14px {font-size: 14px; line-height: 20px; letter-spacing: $letter-spacing;}
+@mixin text-18px {font-size: 18px; line-height: 24px; letter-spacing: $letter-spacing;}
+@mixin text-20px {font-size: 20px; line-height: 28px; letter-spacing: $letter-spacing;}
+@mixin text-24px {font-size: 24px; line-height: 32px; letter-spacing: $letter-spacing;}
+@mixin text-28px {font-size: 28px; line-height: 36px; letter-spacing: $letter-spacing;}
+@mixin text-32px {font-size: 32px; line-height: 40px; letter-spacing: $letter-spacing;}
+@mixin text-36px {font-size: 36px; line-height: 44px; letter-spacing: $letter-spacing;}
+@mixin text-40px {font-size: 40px; line-height: 48px; letter-spacing: $letter-spacing;}
+
+//font-size: display
+@mixin display-xl {font-size: 92px; line-height: 92px; letter-spacing: -1.5px;}
+@mixin display-lg {font-size: 72px; line-height: 72px; letter-spacing: -1.2px;}
+@mixin display-md {font-size: 56px; line-height: 56px; letter-spacing: -1px;}
+@mixin display-sm {font-size: 48px; line-height: 48px; letter-spacing: -0.8px;}
+@mixin display-xs {font-size: 36px; line-height: 36px; letter-spacing: -0.5px;}
+
+//font-size: custom
+@mixin text-loading {font-size: 64px; line-height: 50px; letter-spacing: -4px;}
+
 //responsive-configuration
 @mixin max-width-1728px {@media (max-width: 1728px) {@content;}}
 @mixin max-width-1440px {@media (max-width: 1440px) {@content;}}
-@mixin max-width-1280px {@media (max-width: 1280px) {@content;}}
 @mixin max-width-1024px {@media (max-width: 1024px) {@content;}}
-@mixin max-width-836px {@media (max-width: 836px) {@content;}}
 @mixin max-width-768px {@media (max-width: 768px) {@content;}}
 @mixin max-width-428px {@media (max-width: 428px) {@content;}}
-@mixin max-width-360px {@media (max-width: 360px) {@content;}}
 
-//font-size: default
-@mixin text-14px {font-size: 14px; line-height: 20px; letter-spacing: $letter-spacing-sm;}
-@mixin text-16px {font-size: 16px; line-height: 24px; letter-spacing: $letter-spacing-sm;}
-@mixin text-18px {font-size: 18px; line-height: 28px; letter-spacing: $letter-spacing-sm;}
-@mixin text-20px {font-size: 20px; line-height: 32px; letter-spacing: $letter-spacing-sm;}
-@mixin text-24px {font-size: 24px; line-height: 36px; letter-spacing: $letter-spacing-sm;}
-@mixin text-28px {font-size: 28px; line-height: 40px; letter-spacing: $letter-spacing-sm;}
-@mixin text-32px {font-size: 32px; line-height: 48px; letter-spacing: $letter-spacing-sm;}
-@mixin text-40px {font-size: 40px; line-height: 56px; letter-spacing: $letter-spacing-sm;}
-@mixin text-48px {font-size: 48px; line-height: 64px; letter-spacing: $letter-spacing-sm;}
-@mixin text-56px {font-size: 56px; line-height: 76px; letter-spacing: $letter-spacing-sm;}
-@mixin text-64px {font-size: 64px; line-height: 88px; letter-spacing: $letter-spacing-sm;}
-@mixin text-72px {font-size: 72px; line-height: 104px; letter-spacing: $letter-spacing-sm;}
+//tag-html
+@mixin tag-a-reset {
+    text-decoration: none; 
+    color: map-get($black , 900);
+}
 
-//font-size: display
-@mixin display-164px {font-size: 164px; line-height: 164px; letter-spacing: 0px;}
-@mixin display-148px {font-size: 148px; line-height: 148px; letter-spacing: 0px;}
-@mixin display-80px {font-size: 80px; line-height: 80px; letter-spacing: 0px;}
-
-//utilities
-@mixin reset-tag-a {text-decoration: none; color: $black-900;}
+//display: flex
+@mixin flex-center-horizontal {
+    display: flex;
+    align-items: center;
+}

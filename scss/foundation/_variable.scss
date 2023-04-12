@@ -2,24 +2,39 @@
 $white: #FFFFFF;
 
 //color-collection: black
-$black-900: #101010;
-$black-800: #404040;
-$black-700: #707070;
-$black-600: #9F9F9F;
-$black-500: #CFCFCF;
+$black: (
+    900: #121212,
+    800: #464646,
+    700: #7A7A7A,
+    600: #AEAEAE,
+    500: #E3E3E3
+);
 
 //color-collection: grey
-$grey-900: #C8C8C8;
-$grey-800: #D3D3D3;
-$grey-700: #DEDEDE;
-$grey-600: #E9E9E9;
-$grey-500: #F4F4F4;
+$grey: (
+    900: #CECECE,
+    800: #D9D9D9,
+    700: #E4E4E4,
+    600: #EEEEEE,
+    500: #F9F9F9
+);
 
-//container
-$container: 1360px;
-
-//letter-spacing
-$letter-spacing-sm: 0.3px;
+//font-configuration
+$letter-spacing: 0.2px;
 
 //spacing
-$section-spacing: 140px;
+$container: 1320px;
+$spacing: (
+    xs: 4px,
+    sm: 8px,
+    md: 16px,
+    lg: 24px,
+    xl: 32px,
+    2xl: 40px,
+    3xl: 48px,
+    4xl: 56px,
+    5xl: 64px,
+    6xl: 72px,
+    7xl: 80px
+);
+$section-spacing: 120px;

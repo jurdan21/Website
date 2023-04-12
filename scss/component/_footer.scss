@@ -1,0 +1,12 @@
+@import '../foundation/variable.scss';
+@import '../foundation/mixin.scss';
+
+.footer-main {
+    align-items: center;
+    padding: 24px 0px;
+}
+
+.footer-socmed {
+    display: flex;
+    gap: 16px;
+}

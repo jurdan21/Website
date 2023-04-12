@@ -1,34 +1,12 @@
 @import '../foundation/variable.scss';
 @import '../foundation/mixin.scss';
 
-//link-text
-.link-text-black {
-    color: $black-900;
+//text-link
+.link-black {
     text-decoration: none;
+    color: map-get($black, 900);
 }
 
-.link-text-black:hover {
-    box-shadow: inset 0px -1px 0px #101010;
+.link-black:hover {
+    box-shadow: inset 0px -1px 0px map-get($black, 900);
 }
-
-//button: default
-.btn-icon-lg {
-    height: 80px;
-    width: 80px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: width ease 0.25s;
-}
-
-.btn-icon-lg:hover {
-    width: 120px;
-}
-
-.btn-outline-black {
-    border: 1px solid $black-900;
-    border-radius: 666px;
-}
-
-
-

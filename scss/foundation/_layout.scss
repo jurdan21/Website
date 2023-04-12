@@ -22,39 +22,8 @@
     flex-direction: column;
 }
 
-//responsive-configuration
-@include max-width-1440px {
-    .container {
-        margin: 0px 40px;
-    }
-}
-
-@include max-width-1280px {
-    .container {
-        margin: 0px 36px;
-    }
-}
-
-@include max-width-1024px {
-    .container {
-        margin: 0px 32px;
-    }
-}
-
-@include max-width-836px {
-    .container {
-        margin: 0px 28px;
-    }
-}
-
-@include max-width-768px {
-    .container {
-        margin: 0px 24px;
-    }
-}
-
-@include max-width-428px {
-    .container {
-        margin: 0px 20px;
-    }
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
