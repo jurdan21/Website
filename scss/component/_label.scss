@@ -1,0 +1,12 @@
+@import '../foundation/variable.scss';
+@import '../foundation/mixin.scss';
+
+.label-sm {
+    padding: 2px 8px;
+    border-radius: 666px;
+    white-space: nowrap;
+}
+
+.label-gray {
+    background-color: map-get($grey, 500);
+}

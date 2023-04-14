@@ -81,37 +81,57 @@
 .homeWork-2column {
     gap: 24px;
 
-    .homeWork-list-item {
-        width: 100%;
-        overflow: hidden;
-        border-radius: 16px;
-        aspect-ratio: 18/17;
-        
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+    .homeWork-list-item {aspect-ratio: 18/17;}
 }
 
 .homeWork-1column {
-    .homeWork-list-item {
+    .homeWork-list-item {aspect-ratio: 18/9;}
+}
+
+.homeWork-list-item {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    @include tag-a-reset;
+
+    img {
         width: 100%;
-        overflow: hidden;
-        border-radius: 16px;
-        aspect-ratio: 18/9;
-        
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        height: 100%;
+        object-fit: cover;
+        transition: transform ease $interation-time-xs;
     }
 }
 
-.homeWork-list-item {img {transition: transform ease $interation-time-xs;}}
-.homeWork-list-item:hover {img {transform: scale(1.1);}}
+.homeWork-list-item:hover {
+    .homeWork-list-detail {
+        opacity: 100%;
+    }
+
+    img {transform: scale(1.1);}
+}
+
+.homeWork-list-detail {
+    opacity: 0%;
+    position: absolute;
+    width: -webkit-fill-available;
+    z-index: 23;
+    padding: 24px;
+    margin: 12px;
+    border-radius: 12px;
+    background-color: $white;
+    align-items: start;
+    transition: opacity ease 0.5s;
+}
+
+.homeWork-list-detail-title {
+    width: 100%;
+    gap: 4px;
+
+    p {color: map-get($black, 700);}
+}
 
 //section: contact
 .homeContact {
@@ -148,4 +168,3 @@
     a:hover {margin-right: 4px;}
     span {color: map-get($black, 700);}
 }
-
