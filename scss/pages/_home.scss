@@ -67,6 +67,11 @@
 .homeWork-header-action {
     gap: 8px;
     @include flex-center-horizontal;
+    @include gap-transition;
+}
+
+.homeWork-header-action:hover {
+    gap: 12px;
 }
 
 .homeWork-list {
@@ -105,6 +110,9 @@
     }
 }
 
+.homeWork-list-item {img {transition: transform ease $interation-time-xs;}}
+.homeWork-list-item:hover {img {transform: scale(1.1);}}
+
 //section: contact
 .homeContact {
     padding: 48px;
@@ -126,10 +134,9 @@
     align-items: center;
     justify-content: end;
     gap: 16px;
+    
 
-    img {
-        width: 40px;
-    }
+    img {width: 40px;}
 }
 
 .homeContact-action-text {
@@ -137,6 +144,8 @@
     align-items: start;
     gap: 16px;
 
+    a {transition: margin-right ease 0.25s;}
+    a:hover {margin-right: 4px;}
     span {color: map-get($black, 700);}
 }
 

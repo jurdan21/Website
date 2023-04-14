@@ -254,6 +254,11 @@ body {
   gap: 8px;
   display: flex;
   align-items: center;
+  transition: gap ease 0.24s;
+}
+
+.homeWork-header-action:hover {
+  gap: 12px;
 }
 
 .homeWork-list {
@@ -289,6 +294,14 @@ body {
      object-fit: cover;
 }
 
+.homeWork-list-item img {
+  transition: transform ease 0.24s;
+}
+
+.homeWork-list-item:hover img {
+  transform: scale(1.1);
+}
+
 .homeContact {
   padding: 48px;
   border-radius: 16px;
@@ -319,6 +332,12 @@ body {
   display: flex;
   align-items: start;
   gap: 16px;
+}
+.homeContact-action-text a {
+  transition: margin-right ease 0.25s;
+}
+.homeContact-action-text a:hover {
+  margin-right: 4px;
 }
 .homeContact-action-text span {
   color: #7A7A7A;
