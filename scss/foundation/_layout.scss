@@ -3,9 +3,9 @@
 
 //container
 .container {
-    max-width: $container;
-    right: 0;
-    margin: 0px auto;
+    max-width: 100%;
+    margin-right: 120px;
+    margin-left: 120px;
 }
 
 //display: flex
@@ -23,4 +23,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+//responsive-configuration
+@include max-width-1440px {
+    //container
+    .container {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@include max-width-1024px {
+    //container
+    .container {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@include max-width-768px {
+    //container
+    .container {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
+@include max-width-428px {
+    //container
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }

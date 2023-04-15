@@ -52,12 +52,14 @@
 .homeWork-header {
     align-items: end;
     margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .homeWork-header-title {
     display: flex;
     align-items: start;
-    gap: 16px;
+    gap: 8px;
 
     span {
         color: map-get($black, 700);
@@ -78,18 +80,27 @@
     gap: 24px;
 }
 
-.homeWork-2column {
+.homeWork-row {
     gap: 24px;
 
-    .homeWork-list-item {aspect-ratio: 18/17;}
-}
-
-.homeWork-1column {
-    .homeWork-list-item {aspect-ratio: 18/9;}
+    .ratio-1-1 {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+    
+    .ratio-flex-1 {
+        width: 60%;
+        max-height: 648px;
+        aspect-ratio: 1/1;
+    }
+    .ratio-flex-2 {
+        width: 40%;
+        max-height: 648px;
+        aspect-ratio: 1/1;
+    }
 }
 
 .homeWork-list-item {
-    width: 100%;
     overflow: hidden;
     border-radius: 16px;
     position: relative;
@@ -135,7 +146,7 @@
 
 //section: contact
 .homeContact {
-    padding: 48px;
+    padding: 40px;
     border-radius: 16px;
     background-color: map-get($grey, 500);
     margin-top: $section-spacing;
@@ -162,9 +173,75 @@
 .homeContact-action-text {
     display: flex;
     align-items: start;
-    gap: 16px;
+    gap: 8px;
 
     a {transition: margin-right ease 0.25s;}
     a:hover {margin-right: 4px;}
     span {color: map-get($black, 700);}
+}
+
+//responsive-configuration
+@include max-width-1024px {
+    //section: work
+    .homeWork-row {
+        flex-direction: column;
+
+        .ratio-flex-1 {width: 100%; max-height: 100%;}
+        .ratio-flex-2 {width: 100%; max-height: 100%;}
+    }
+}
+
+@include max-width-768px {
+    //section: hero
+    .homeHero-title-detail {
+        flex-wrap: wrap;
+        h2 {@include text-36px}
+    }
+
+    .homeHero-intro {
+        flex-direction: column;
+        gap: 40px;
+        align-items: start;
+    }
+}
+
+@include max-width-428px {
+    //section: hero
+    .homeHero-title {
+        h1 {@include display-sm;}
+        h2 {@include text-28px;}
+    }
+
+    //section: work
+    .homeWork-header-title {
+        flex-direction:  column;
+        h1 {@include display-xs;}
+    }
+
+    .homeWork-list, .homeWork-row {gap: 16px;}
+
+    //section: contact
+    .homeContact {
+        padding: 24px;
+    }
+
+    .homeContact-title {
+        h1 {@include text-24px;}
+        p {@include text-14px;}
+    }
+
+    .homeContact-action {
+        flex-direction: column;
+        align-items: end;
+        gap: 8px;
+    }
+
+    .homeContact-action-text {
+        width: 100%;
+        align-items: start;
+        flex-direction:  column;
+        gap: 8px;
+
+        a {@include text-24px;}
+    }
 }

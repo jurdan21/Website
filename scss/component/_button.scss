@@ -10,3 +10,12 @@
 .link-black:hover {
     box-shadow: inset 0px -1px 0px map-get($black, 900);
 }
+
+.link-white {
+    text-decoration: none;
+    color: $white;
+}
+
+.link-white:hover {
+    box-shadow: inset 0px -1px 0px $white;
+}
