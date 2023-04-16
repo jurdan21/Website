@@ -99,14 +99,14 @@
 
 .text-loading-lg {
   font-size: 64px;
-  line-height: 50px;
+  line-height: 52px;
   letter-spacing: -4px;
 }
 
 .text-loading-md {
-  font-size: 52px;
-  line-height: 40px;
-  letter-spacing: -4px;
+  font-size: 44px;
+  line-height: 36px;
+  letter-spacing: -3px;
 }
 
 .container {
@@ -203,6 +203,9 @@ body {
   padding: 20px 0px;
 }
 
+.header-logo {
+  align-items: start;
+}
 .header-logo span {
   color: #7A7A7A;
 }
@@ -288,6 +291,11 @@ body {
   box-shadow: inset 0px -1px 0px #FFFFFF;
 }
 
+.link-grey {
+  text-decoration: none;
+  color: #E3E3E3;
+}
+
 .label-sm {
   padding: 2px 8px;
   border-radius: 666px;
@@ -331,12 +339,33 @@ body {
 }
 
 @media (max-width: 428px) {
+  .introMawar-main {
+    gap: 24px;
+  }
   .introMawar-main h1 {
-    font-size: 52px;
-    line-height: 40px;
-    letter-spacing: -4px;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: -3px;
   }
 }
+.soon {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.soon-main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.soon-main a, .soon-main h1 {
+  color: #E3E3E3;
+}
+
 .homeHero {
   padding-top: 264px;
 }

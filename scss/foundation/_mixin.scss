@@ -19,7 +19,7 @@
 
 //font-size: custom
 @mixin text-loading-lg {font-size: 64px; line-height: 50px; letter-spacing: -4px;}
-@mixin text-loading-md {font-size: 52px; line-height: 40px; letter-spacing: -4px;}
+@mixin text-loading-md {font-size: 44px; line-height: 36px; letter-spacing: -3px;}
 
 //responsive-configuration
 @mixin max-width-1728px {@media (max-width: 1728px) {@content;}}
@@ -38,6 +38,12 @@
 @mixin flex-center-horizontal {
     display: flex;
     align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 //interaction

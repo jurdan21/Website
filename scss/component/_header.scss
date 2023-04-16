@@ -21,6 +21,8 @@
 }
 
 .header-logo {
+    align-items: start;
+    
     span {
         color: map-get($black , 700);
     }

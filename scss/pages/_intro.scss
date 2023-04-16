@@ -38,6 +38,8 @@
 //responsive-configuration
 @include max-width-428px {
     .introMawar-main {
+        gap: 24px;
+
         h1 {
             @include text-loading-md;
         }

@@ -19,3 +19,8 @@
 .link-white:hover {
     box-shadow: inset 0px -1px 0px $white;
 }
+
+.link-grey {
+    text-decoration: none;
+    color: map-get($black, 500);
+}
