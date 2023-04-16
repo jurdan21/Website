@@ -18,7 +18,8 @@
 @mixin display-xs {font-size: 36px; line-height: 36px; letter-spacing: -0.5px;}
 
 //font-size: custom
-@mixin text-loading {font-size: 64px; line-height: 50px; letter-spacing: -4px;}
+@mixin text-loading-lg {font-size: 64px; line-height: 50px; letter-spacing: -4px;}
+@mixin text-loading-md {font-size: 52px; line-height: 40px; letter-spacing: -4px;}
 
 //responsive-configuration
 @mixin max-width-1728px {@media (max-width: 1728px) {@content;}}
