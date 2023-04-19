@@ -26,7 +26,7 @@
 @mixin max-width-1440px {@media (max-width: 1440px) {@content;}}
 @mixin max-width-1024px {@media (max-width: 1024px) {@content;}}
 @mixin max-width-768px {@media (max-width: 768px) {@content;}}
-@mixin max-width-428px {@media (max-width: 428px) {@content;}}
+@mixin max-width-524px {@media (max-width: 524px) {@content;}}
 
 //tag-html
 @mixin tag-a-reset {

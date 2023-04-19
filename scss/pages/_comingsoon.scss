@@ -13,5 +13,15 @@
     flex-direction: column;
     gap: 16px;
 
-    a, h1 {color: map-get($black, 500);}
+    a, h1 {
+        text-align: center;
+        color: map-get($black, 500);
+    }
+}
+
+//responsive-configuration
+@include max-width-524px {
+    .soon-main {
+        h1 {@include text-loading-md;}
+    }
 }

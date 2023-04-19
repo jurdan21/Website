@@ -203,7 +203,7 @@
     }
 }
 
-@include max-width-428px {
+@include max-width-524px {
     //section: hero
     .homeHero-title {
         h1 {@include display-sm;}
