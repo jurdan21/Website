@@ -4,7 +4,7 @@
 .drawingHero {
     margin-top: 264px;
 
-    h2 {
+    h1:nth-child(2) {
         text-align: end;
     }
 }
@@ -26,10 +26,17 @@
         object-fit: cover;
     }
 
-    h1 {
+    h3 {
         margin-top: 24px;
         margin-bottom: 4px;
     }
 
     p {color: map-get($black, 700);}
+}
+
+//responsive-configuration
+@include max-width-524px {
+    .drawingHero-title {
+        h1, h1 {@include display-md;}
+    }
 }

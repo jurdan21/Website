@@ -635,7 +635,7 @@ body {
 .drawingHero {
   margin-top: 264px;
 }
-.drawingHero h2 {
+.drawingHero h1:nth-child(2) {
   text-align: end;
 }
 
@@ -656,10 +656,18 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.drawingList-item h1 {
+.drawingList-item h3 {
   margin-top: 24px;
   margin-bottom: 4px;
 }
 .drawingList-item p {
   color: #7A7A7A;
+}
+
+@media (max-width: 524px) {
+  .drawingHero-title h1, .drawingHero-title h1 {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -1px;
+  }
 }/*# sourceMappingURL=main.css.map */
