@@ -21,10 +21,13 @@
 
 .homeHero-intro {
     align-items: end;
+    padding: 56px 0 56px 0;
+    border-bottom: 1px solid #464646;
+    border-top: 1px solid #464646;
 }
 
 .homeHero-intro-about {
-    max-width: 508px;
+    max-width: 708px;
     gap: 32px;
 
     p {
@@ -49,7 +52,7 @@
 
 .homeWork-header {
     align-items: end;
-    margin-bottom: 24px;
+    margin-bottom: 80px;
     flex-wrap: wrap;
     gap: 8px;
 }
@@ -64,6 +67,7 @@
     }
 }
 
+
 .homeWork-header-action {
     gap: 8px;
     @include flex-center-horizontal;
@@ -74,30 +78,53 @@
     gap: 12px;
 }
 
+
 .homeWork-list {
-    gap: 24px;
+    gap: 48px;
 }
 
 .homeWork-row {
-    gap: 24px;
+    gap: 48px;
 
-    .ratio-1-1 {
-        width: 100%;
-        aspect-ratio: 1/1;
-    }
+    // .ratio-1-1 {
+    //     width: 100%;
+        
+    //     aspect-ratio: 1/1;
+    // }
     
     .ratio-flex-1 {
-        width: 60%;
+        width: 100%;
         max-height: 648px;
         aspect-ratio: 1/1;
     }
-    .ratio-flex-2 {
-        width: 40%;
-        max-height: 648px;
-        aspect-ratio: 1/1;
-    }
+    // .ratio-flex-2 {
+    //     width: 100%;
+    //     max-height: 648px;
+    //     aspect-ratio: 1/1;
+    // }
 }
 
+.homeWork-row1 {
+    gap: 48px;
+    margin-top: 80px;
+
+    // .ratio-1-1 {
+    //     width: 100%;
+        
+    //     aspect-ratio: 1/1;
+    // }
+    
+    .ratio-flex-1 {
+        width: 100%;
+        max-height: 648px;
+        aspect-ratio: 1/1;
+    }
+    // .ratio-flex-2 {
+    //     width: 100%;
+    //     max-height: 648px;
+    //     aspect-ratio: 1/1;
+    // }
+}
 .homeWork-list-item {
     overflow: hidden;
     border-radius: 16px;
@@ -140,6 +167,82 @@
     gap: 4px;
 
     p {color: map-get($black, 700);}
+}
+
+//Section: Career
+
+.homeCareer {
+    margin-top: $section-spacing;
+    gap: 24px;
+}
+
+.homeCareer-header {
+    align-items: end;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.homeCareer-header-title {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    max-width: 512px;
+
+    span {
+        color: map-get($black, 700);
+    }
+}
+
+
+.homeCareer-header-action {
+    gap: 8px;
+    @include flex-center-horizontal;
+    @include gap-transition;
+}
+
+.homeCareer-header-action:hover {
+    gap: 12px;
+}
+
+.homeCareer-detail{
+    padding: 56px 0 56px 0;
+    // border-bottom: 1px solid #464646;
+    border-top: 1px solid #464646;
+
+    
+}
+.homeCareer-detail1{
+    padding: 56px 0 56px 0;
+    border-bottom: 1px solid #464646;
+    border-top: 1px solid #464646;
+    
+}
+
+.homeCareer-role{
+    width: 240px;
+}
+
+.homeCareer-company{
+    width: 320px;
+}
+
+.homeCareer-description{
+    max-width: 440px;
+}
+
+//section: Talk
+
+.homeTalk{
+    align-items: center;
+    margin: 140px 0 140px 0;
+    gap: 80px;
+}
+
+.homeTalk-detail{
+    gap: 40px;
+    max-width: 70%;
+    text-align: center;
 }
 
 //section: contact

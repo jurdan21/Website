@@ -8,24 +8,31 @@
     right: 0;
     z-index: 12;
     width: 100%;
-    background-color: $white;
+    background-color: $dark;
 }
 
-.header.active {
-    border-bottom: 1px solid map-get($grey, 700);
-}
+// .header.active {
+//     border-bottom: 1px solid map-get($grey, 700);
+// }
 
 .header-main {
     align-items: center;
-    padding: 20px 0px;
+    padding: 28px 0px;
 }
 
 .header-logo {
     align-items: start;
     
     span {
-        color: map-get($black , 700);
+        color: $white;
     }
+}
+
+.list-navigasi{
+    display: flex;
+    padding: 0px;
+    gap: 48px;
+    text-decoration: none;
 }
 
 .headerExpand {

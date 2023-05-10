@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,500;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 .light {
   font-weight: 300;
 }
@@ -21,6 +21,12 @@
 
 .text-14px {
   font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.text-16px {
+  font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.2px;
 }
@@ -111,8 +117,8 @@
 
 .container {
   max-width: 100%;
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 140px;
+  margin-left: 140px;
 }
 
 .flex-auto {
@@ -133,8 +139,8 @@
 
 @media (max-width: 1440px) {
   .container {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 @media (max-width: 1024px) {
@@ -158,7 +164,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Archivo", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, small, p, span, a {
@@ -191,23 +197,26 @@ body {
   right: 0;
   z-index: 12;
   width: 100%;
-  background-color: #FFFFFF;
-}
-
-.header.active {
-  border-bottom: 1px solid #E4E4E4;
+  background-color: #131313;
 }
 
 .header-main {
   align-items: center;
-  padding: 20px 0px;
+  padding: 28px 0px;
 }
 
 .header-logo {
   align-items: start;
 }
 .header-logo span {
-  color: #7A7A7A;
+  color: #FFFFFF;
+}
+
+.list-navigasi {
+  display: flex;
+  padding: 0px;
+  gap: 48px;
+  text-decoration: none;
 }
 
 .headerExpand {
@@ -296,6 +305,20 @@ body {
   color: #E3E3E3;
 }
 
+.link-pink {
+  text-decoration: none;
+  color: #ED89A4;
+}
+
+.outline-lg {
+  text-decoration: none;
+  padding: 24px 64px 24px 64px;
+  border-radius: 80px;
+  border: 1px solid #FFFFFF;
+  background: #131313;
+  color: #FFFFFF;
+}
+
 .label-sm {
   padding: 2px 8px;
   border-radius: 666px;
@@ -314,7 +337,7 @@ body {
   left: 0;
   right: 0;
   z-index: 15;
-  background-color: #FFFFFF;
+  background-color: #131313;
   visibility: visible;
   opacity: 1;
   transition: all ease-out 0.25s;
@@ -335,7 +358,7 @@ body {
 }
 .introMawar-main h1, .introMawar-main p {
   text-align: center;
-  color: #F6C3DF;
+  color: #ED89A4;
 }
 
 @media (max-width: 524px) {
@@ -393,10 +416,13 @@ body {
 
 .homeHero-intro {
   align-items: end;
+  padding: 56px 0 56px 0;
+  border-bottom: 1px solid #464646;
+  border-top: 1px solid #464646;
 }
 
 .homeHero-intro-about {
-  max-width: 508px;
+  max-width: 708px;
   gap: 32px;
 }
 .homeHero-intro-about p {
@@ -419,7 +445,7 @@ body {
 
 .homeWork-header {
   align-items: end;
-  margin-bottom: 24px;
+  margin-bottom: 80px;
   flex-wrap: wrap;
   gap: 8px;
 }
@@ -445,23 +471,24 @@ body {
 }
 
 .homeWork-list {
-  gap: 24px;
+  gap: 48px;
 }
 
 .homeWork-row {
-  gap: 24px;
-}
-.homeWork-row .ratio-1-1 {
-  width: 100%;
-  aspect-ratio: 1/1;
+  gap: 48px;
 }
 .homeWork-row .ratio-flex-1 {
-  width: 60%;
+  width: 100%;
   max-height: 648px;
   aspect-ratio: 1/1;
 }
-.homeWork-row .ratio-flex-2 {
-  width: 40%;
+
+.homeWork-row1 {
+  gap: 48px;
+  margin-top: 80px;
+}
+.homeWork-row1 .ratio-flex-1 {
+  width: 100%;
   max-height: 648px;
   aspect-ratio: 1/1;
 }
@@ -509,6 +536,74 @@ body {
 }
 .homeWork-list-detail-title p {
   color: #7A7A7A;
+}
+
+.homeCareer {
+  margin-top: 140px;
+  gap: 24px;
+}
+
+.homeCareer-header {
+  align-items: end;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.homeCareer-header-title {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  max-width: 512px;
+}
+.homeCareer-header-title span {
+  color: #7A7A7A;
+}
+
+.homeCareer-header-action {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  transition: gap ease 0.24s;
+}
+
+.homeCareer-header-action:hover {
+  gap: 12px;
+}
+
+.homeCareer-detail {
+  padding: 56px 0 56px 0;
+  border-top: 1px solid #464646;
+}
+
+.homeCareer-detail1 {
+  padding: 56px 0 56px 0;
+  border-bottom: 1px solid #464646;
+  border-top: 1px solid #464646;
+}
+
+.homeCareer-role {
+  width: 240px;
+}
+
+.homeCareer-company {
+  width: 320px;
+}
+
+.homeCareer-description {
+  max-width: 440px;
+}
+
+.homeTalk {
+  align-items: center;
+  margin: 140px 0 140px 0;
+  gap: 80px;
+}
+
+.homeTalk-detail {
+  gap: 40px;
+  max-width: 70%;
+  text-align: center;
 }
 
 .homeContact {

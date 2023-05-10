@@ -24,3 +24,17 @@
     text-decoration: none;
     color: map-get($black, 500);
 }
+
+.link-pink {
+    text-decoration: none;
+    color: map-get($pink, 500);
+}
+
+.outline-lg{
+    text-decoration: none;
+    padding: 24px 64px 24px 64px;
+    border-radius: 80px;
+    border: 1px solid $white;
+    background: ($dark);
+    color: $white;
+}
