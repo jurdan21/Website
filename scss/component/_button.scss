@@ -35,6 +35,12 @@
     padding: 24px 64px 24px 64px;
     border-radius: 80px;
     border: 1px solid $white;
-    background: ($dark);
+    background: $dark;
     color: $white;
+    cursor: pointer;
+}
+
+.outline-lg:hover{
+    color: map-get($pink, 500);
+    border-color:map-get($pink, 500) ;
 }

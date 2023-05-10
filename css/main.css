@@ -317,6 +317,12 @@ body {
   border: 1px solid #FFFFFF;
   background: #131313;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+.outline-lg:hover {
+  color: #ED89A4;
+  border-color: #ED89A4;
 }
 
 .label-sm {
