@@ -59,10 +59,10 @@
       <!-- <p class="text-18px light">BASED IN MALANG, INDONESIA</p> -->
       <!-- <a class="text-18px light link-black" id="headerExpand-trigger-open" href="#">[ MENUS ]</a> -->
         <ul class="list-navigasi">
-          <a class="text-16px light link-white" href="">About</a>
-          <a class="text-16px light link-white" href="">Work</a>
-          <a class="text-16px light link-white" href="">Career</a>
-          <a class="text-16px light link-white" href="">Contact</a>
+          <a class="text-16px light link-white" href="#homeHero-intro">About</a>
+          <a class="text-16px light link-white" href="#homeHero-work">Work</a>
+          <a class="text-16px light link-white" href="#homeCareer">Career</a>
+          <a class="text-16px light link-white" href="#homeTalk">Contact</a>
           <a class="text-16px light link-white" href="https://drive.google.com/file/d/1okn5rIIFVUmUuompCqsuhi5hBWhGYGfB/view?pli=1" target="_blank">Resume</a>
         </ul>
     </div>
@@ -79,12 +79,12 @@
           <!-- <h2 class="text-40px light">2021 ⎯ 2023</h2> -->
         </div>
       </div>
-      <div class="homeHero-intro flex-auto">
+      <div class="homeHero-intro flex-auto" id="homeHero-intro">
         <div class="homeHero-intro-about flex-column">
           <div class="homeHero-intro-about-title">
             <span class="text-14px light link-grey">Introduce</span>
             <img src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1683696037/Arrow_Right_bd5ce7.svg">
-            <a class="text-14px light link-white" href="pages/comingsoon.html">About Me</a>
+            <a class="text-14px light link-white" href="#">About Me</a>
           </div>
           <p class="text-20px light">Welcome to my personal website. I’m Jurdan Wahyu Adi Saputra and I'm from Malang - Indonesia. I started learning UI Design in 2021. My hobby is riding my fixie bike around Tirto Rahayu street.</p>
         </div>
@@ -92,15 +92,15 @@
       </div>
     </section>
     <!--section: work-->
-    <section class="homeWork">
+    <section class="homeWork" id="homeHero-work">
       <div class="homeWork-header flex-auto">
         <div class="homeWork-header-title">
           <h1 class="display-md light">Latest Works</h1>
         </div>
-        <div class="homeWork-header-action">
+        <!-- <div class="homeWork-header-action">
           <a class="text-18px light link-white" href="pages/comingsoon.html">See All My Works</a>
           <img src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1683696037/Arrow_Right_bd5ce7.svg">
-        </div>
+        </div> -->
       </div>
       <div class="homeWork-list flex-auto">
         <div class="homeWork-row flex-column">
@@ -126,16 +126,6 @@
           </a>
         </div>
         <div class="homeWork-row1 flex-column">
-          <a class="homeWork-list-item ratio-flex-1" href="pages/comingsoon.html" target="_blank">
-            <div class="homeWork-list-detail flex-auto">
-              <div class="homeWork-list-detail-title flex-column">
-                <h2 class="text-20px light">Coming Soon</h2>
-                <p class="text-14px light">Lorem ipsum dolor sit amet</p>
-              </div>
-              <span class="text-14px light label-sm label-gray">06 ⎯ 2021</span>
-            </div>
-            <img src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698864/image3_k6ahls.png">
-          </a>
           <a class="homeWork-list-item ratio-flex-1" href="https://medium.com/@jurdann.wahyu/rentho-real-estate-mobile-application-personal-portofolio-1-35544b38065f" target="_blank">
             <div class="homeWork-list-detail flex-auto">
               <div class="homeWork-list-detail-title flex-column">
@@ -146,19 +136,29 @@
             </div>
             <img src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698855/image4_xsfdjx.png">
           </a>
+          <a class="homeWork-list-item ratio-flex-1" href="pages/comingsoon.html" target="_blank">
+            <div class="homeWork-list-detail flex-auto">
+              <div class="homeWork-list-detail-title flex-column">
+                <h2 class="text-20px light">Coming Soon</h2>
+                <p class="text-14px light">Lorem ipsum dolor sit amet</p>
+              </div>
+              <span class="text-14px light label-sm label-gray">06 ⎯ 2021</span>
+            </div>
+            <img src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698864/image3_k6ahls.png">
+          </a>
         </div>
       </div>
     </section>
     <!--section: Career-->
-    <section class="homeCareer flex-column">
+    <section class="homeCareer flex-column" id="homeCareer">
       <div class="homeCareer-header flex-auto">
           <div class="homeCareer-header-title">
             <h1 class="display-md light">My Career Journey As a Designer</h1>
           </div>
-          <div class="homeCareer-header-action">
+          <!-- <div class="homeCareer-header-action">
             <a class="text-18px light link-white" href="https://drive.google.com/file/d/1okn5rIIFVUmUuompCqsuhi5hBWhGYGfB/view?pli=1" target="_blank">See My Resume</a>
             <img src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1683696037/Arrow_Right_bd5ce7.svg">
-          </div>
+          </div> -->
       </div>
       <div class="homeCareer-list flex-column">
         <div class="homeCareer-detail flex-auto">
@@ -205,7 +205,7 @@
 
     <!--section: Talk-->
 
-    <section class="homeTalk flex-column">
+    <section class="homeTalk flex-column" id="homeTalk">
       <div class="homeTalk-detail flex-column">
           <h1 class="display-lg light">Always love to listen & talk with you about big or small things.</h1>
           <p class="text-18px">Lorem ipsum dolor sit amet. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
