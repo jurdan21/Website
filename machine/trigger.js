@@ -19,6 +19,8 @@
 const myDiv = document.getElementById('intro-trigger');
 const myClass = document.querySelector('.introMawar');
 
+
+
 // Mengubah nilai background-color setelah 3 detik
 setTimeout(() => {
   myClass.classList.add('hide');
