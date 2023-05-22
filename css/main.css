@@ -708,7 +708,7 @@ body {
     display: none;
   }
   .homeHero {
-    padding-top: 160px;
+    padding-top: 200px;
   }
   .homeWork-header-title {
     flex-direction: column;
@@ -722,7 +722,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 80px;
+    margin-top: 120px;
   }
   .homeWork-header {
     margin: 0;
@@ -738,7 +738,7 @@ body {
     flex-wrap: wrap;
   }
   .homeCareer {
-    margin-top: 80px;
+    margin-top: 120px;
   }
   .homeCareer-header {
     margin: 0;
@@ -757,13 +757,22 @@ body {
     gap: 16px;
   }
   .homeTalk {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    gap: 40px;
+  }
+  .homeTalk-detail {
+    max-width: 80%;
   }
   .homeTalk-detail h1 {
     font-size: 36px;
     line-height: 36px;
     letter-spacing: -0.5px;
+  }
+  .homeTalk-detail p {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
   }
   .homeContact {
     padding: 24px;
