@@ -12,3 +12,14 @@
     display: flex;
     gap: 16px;
 }
+
+
+@include max-width-524px {
+.footer-main{
+    align-items: center;
+    padding: 24px 0px;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}   

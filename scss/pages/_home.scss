@@ -311,8 +311,16 @@
 @include max-width-524px {
     //section: hero
     .homeHero-title {
-        h1 {@include display-sm;}
+        h1 {@include display-xs;}
         h2 {@include text-28px;}
+    }
+    
+    .list-navigasi{
+        display: none;
+    }
+
+    .homeHero{
+        padding-top: 160px;
     }
 
     //section: work
@@ -320,8 +328,59 @@
         flex-direction:  column;
         h1 {@include display-xs;}
     }
+    .homeWork{
+        display: flex;
+        flex-direction:  column;
+        gap: 40px;
+        margin-top: 80px;
+    }
 
-    .homeWork-list, .homeWork-row {gap: 16px;}
+    .homeWork-header{
+        margin: 0;
+    }
+    .homeWork-list, .homeWork-row {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+    .homeWork-row1 {
+        gap: 24px;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .homeCareer{
+        margin-top: 80px;
+    }
+
+    .homeCareer-header{
+        margin: 0;
+    }
+
+    .homeCareer-header-title{
+        h1 {@include display-xs;}
+    }
+
+    .homeCareer-detail, .homeCareer-detail1{
+        padding: 40px 0 40px 0;
+        border-top: 1px solid #464646;
+        border-bottom: 1px solid #464646;
+        flex-direction: column;
+        margin-top: -1px;
+        gap: 16px;
+    }
+
+    .homeTalk{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .homeTalk-detail{
+        h1 {@include display-xs;}
+    }
+
+
+
 
     //section: contact
     .homeContact {

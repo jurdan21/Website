@@ -198,6 +198,7 @@ body {
   z-index: 12;
   width: 100%;
   background-color: #131313;
+  transition: top 0.3s ease;
 }
 
 .header-main {
@@ -282,6 +283,15 @@ body {
   gap: 16px;
 }
 
+@media (max-width: 524px) {
+  .footer-main {
+    align-items: center;
+    padding: 24px 0px;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .link-black {
   text-decoration: none;
   color: #121212;
@@ -685,14 +695,20 @@ body {
 }
 @media (max-width: 524px) {
   .homeHero-title h1 {
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -0.8px;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
   }
   .homeHero-title h2 {
     font-size: 28px;
     line-height: 36px;
     letter-spacing: 0.2px;
+  }
+  .list-navigasi {
+    display: none;
+  }
+  .homeHero {
+    padding-top: 160px;
   }
   .homeWork-header-title {
     flex-direction: column;
@@ -702,8 +718,52 @@ body {
     line-height: 36px;
     letter-spacing: -0.5px;
   }
+  .homeWork {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+  }
+  .homeWork-header {
+    margin: 0;
+  }
   .homeWork-list, .homeWork-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .homeWork-row1 {
+    gap: 24px;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .homeCareer {
+    margin-top: 80px;
+  }
+  .homeCareer-header {
+    margin: 0;
+  }
+  .homeCareer-header-title h1 {
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+  }
+  .homeCareer-detail, .homeCareer-detail1 {
+    padding: 40px 0 40px 0;
+    border-top: 1px solid #464646;
+    border-bottom: 1px solid #464646;
+    flex-direction: column;
+    margin-top: -1px;
     gap: 16px;
+  }
+  .homeTalk {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .homeTalk-detail h1 {
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
   }
   .homeContact {
     padding: 24px;
