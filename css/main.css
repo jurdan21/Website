@@ -306,7 +306,12 @@ body {
   color: #FFFFFF;
 }
 
-a .garis {
+a.nav {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+a.nav .garis {
   width: 0px;
   color: #FFFFFF;
   display: block;
@@ -314,7 +319,7 @@ a .garis {
   background: #FFFFFF;
 }
 
-a:hover .garis {
+a.nav:hover .garis {
   width: 100%;
   transition: width 0.5s ease;
 }
