@@ -306,8 +306,17 @@ body {
   color: #FFFFFF;
 }
 
-.link-white:hover {
-  box-shadow: inset 0px -1px 0px #FFFFFF;
+a .garis {
+  width: 0px;
+  color: #FFFFFF;
+  display: block;
+  height: 2px;
+  background: #FFFFFF;
+}
+
+a:hover .garis {
+  width: 100%;
+  transition: width 0.5s ease;
 }
 
 .link-grey {

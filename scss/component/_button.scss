@@ -16,8 +16,28 @@
     color: $white;
 }
 
-.link-white:hover {
-    box-shadow: inset 0px -1px 0px $white;
+// .link-white:hover {
+//     box-shadow: inset 0px -1px 0px $white;
+// }
+
+
+
+a{
+    .garis{
+        width: 0px;
+        color: $white;
+        display: block;
+        height: 2px;
+        background: $white;
+    }
+    
+}
+
+a:hover{
+    .garis{
+        width: 100%;
+        transition: width 0.5s ease;
+    }
 }
 
 .link-grey {
