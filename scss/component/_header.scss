@@ -29,6 +29,11 @@
     }
 }
 
+
+.menu-navigasi {
+    display: none;
+}
+
 .list-navigasi{
     display: flex;
     padding: 0px;
@@ -52,12 +57,19 @@
 .headerExpand-logo {
     display: flex;
     align-items: center;
-    height: 84px;
+    height: 80px;
+    
 }
+
+
 
 .headerExpand-list {
     width: 100%;
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
 }
 
 .headerExpand-list-item {
@@ -78,11 +90,19 @@
             display: none;
         }
     }
+
+    .menu-navigasi {
+        display: none;
+    }
 }
 
 @include max-width-524px {
     .headerExpand-list-item {
         p {@include display-sm;}
         img {width: 32px;}
+    }
+
+    .menu-navigasi {
+        display: contents;
     }
 }
