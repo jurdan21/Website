@@ -1,0 +1,41 @@
+@import '../foundation/variable.scss';
+@import '../foundation/mixin.scss';
+
+
+//section: hero
+.homeui {
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.homeui-title{
+    gap: 16px;
+    align-items: center;
+    span{
+        text-align: center;
+    }
+}
+
+.image_collection{
+    gap: 24px;
+}
+
+.image_row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     max-width: 1440px;
+//     gap: 24px;
+//     position: relative;
+//     overflow: hidden;
+ }
+
+.imageui{
+//   flex: 1;
+//   width: 0;
+    max-width: calc(48% - -8px);    
+    height: 100%;
+}
+

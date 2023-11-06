@@ -948,43 +948,4 @@ a.nav:hover .garis {
     line-height: 32px;
     letter-spacing: 0.3px;
   }
-}
-.drawingHero {
-  margin-top: 264px;
-}
-.drawingHero h1:nth-child(2) {
-  text-align: end;
-}
-
-.drawingList {
-  margin-top: 140px;
-  margin-bottom: 140px;
-  display: flex;
-  justify-content: center;
-}
-
-.drawingList-item {
-  max-width: 648px;
-  height: 100%;
-}
-.drawingList-item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.drawingList-item h3 {
-  margin-top: 24px;
-  margin-bottom: 4px;
-}
-.drawingList-item p {
-  color: #7A7A7A;
-}
-
-@media (max-width: 524px) {
-  .drawingHero-title h1, .drawingHero-title h1 {
-    font-size: 56px;
-    line-height: 56px;
-    letter-spacing: -1px;
-  }
 }/*# sourceMappingURL=main.css.map */

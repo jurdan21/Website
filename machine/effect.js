@@ -3,7 +3,7 @@ const element = document.querySelector('.header');
 
 window.onscroll = () => {
   const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
-
+  console.log("opo")
   if (scrollPos > 84) {
     element.classList.add('active');
   } else {
