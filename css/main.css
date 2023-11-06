@@ -545,7 +545,7 @@ a.nav:hover .garis {
 }
 
 .title_project {
-  width: 100%;
+  width: 80%;
 }
 
 .category_project {
@@ -553,7 +553,7 @@ a.nav:hover .garis {
 }
 
 .date_project {
-  width: 32%;
+  width: 40%;
   text-align: right;
 }
 
