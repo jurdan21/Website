@@ -4,8 +4,8 @@
 //container
 .container {
     max-width: 100%;
-    margin-right: 140px;
-    margin-left: 140px;
+    margin-right: 220px;
+    margin-left: 220px;
 }
 
 //display: flex
@@ -29,31 +29,31 @@
 @include max-width-1440px {
     //container
     .container {
-        margin-left: 120px;
-        margin-right: 120px;
+        margin-left: 220px;
+        margin-right: 220px;
     }
 }
 
 @include max-width-1024px {
     //container
     .container {
-        margin-left: 32px;
-        margin-right: 32px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
 @include max-width-768px {
     //container
     .container {
-        margin-left: 24px;
-        margin-right: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
 @include max-width-524px {
     //container
     .container {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }

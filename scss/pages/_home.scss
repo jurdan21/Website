@@ -7,37 +7,130 @@
 
 //section: hero
 .homeHero {
-    padding-top: 264px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 }
 
-.homeHero-title {
-    margin-bottom: 96px;
-}
+
 
 .homeHero-title-detail {
     @include flex-center-horizontal;
     gap: 32px;
+    justify-content: center;
 
     h2 {
         color: map-get($black , 700);
     }
 }
 
-.homeHero-intro {
-    align-items: end;
-    padding: 56px 0 56px 0;
-    border-bottom: 1px solid #464646;
-    border-top: 1px solid #464646;
+.desc-container{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
-.homeHero-intro-about {
-    max-width: 708px;
-    gap: 32px;
-
-    p {
-        width: 100%;
-    }
+.project_container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 24px;
 }
+
+.projcet_head{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.project_list{
+    width: 100%;
+    gap: 24px;
+    cursor: pointer;
+    
+}
+
+.project_list:hover{
+    background-color: map-get($black, 900);
+    color: $white;
+    cursor: pointer;
+}
+
+.title_project{
+    width: 100%;
+}
+
+.category_project{
+    width: 64%;
+}
+
+.date_project{
+    width: 24%;
+    text-align: right;
+}
+
+.contact{
+    padding: 40px 0;
+    gap: 24px;
+    align-items: center;
+}
+
+.contact_content{
+    gap: 40px;
+    align-items: center;
+
+   
+}
+.title_contact{
+    width: 84%;
+    text-align: center;
+}
+
+.button_contact{
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.link_container{
+    padding: 40px 0;
+    gap: 24px;
+}
+
+.footer{
+    align-items: center;
+    padding: 40px 0;
+    gap: 24px;
+}
+
+
+
+
+// .homeHero-intro {
+//     align-items: end;
+//     padding: 56px 0 56px 0;
+//     border-bottom: 1px solid #464646;
+//     border-top: 1px solid #464646;
+// }
+
+// .homeHero-intro-about {
+//     max-width: 708px;
+//     gap: 32px;
+
+//     p {
+//         width: 100%;
+//     }
+// }
 
 .homeHero-intro-about-title {
     @include flex-center-horizontal;

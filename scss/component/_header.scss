@@ -8,7 +8,7 @@
     right: 0;
     z-index: 12;
     width: 100%;
-    background-color: $dark;
+    background-color: $white;
     transition: top 0.3s ease;
 }
 
@@ -18,7 +18,13 @@
 
 .header-main {
     align-items: center;
-    padding: 28px 0px;
+    padding: 40px 20px;
+    justify-content: center;
+}
+
+.divider{
+    height: 16px;
+    border-left: 1px solid map-get($black, 900);
 }
 
 .header-logo {
@@ -37,8 +43,9 @@
 .list-navigasi{
     display: flex;
     padding: 0px;
-    gap: 48px;
+    gap: 16px;
     text-decoration: none;
+    align-items: center;
 }
 
 .headerExpand {
@@ -77,8 +84,8 @@
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
-    border-top: 1px solid #282828;
-    border-bottom: 1px solid #282828;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     @include tag-a-reset;
     color: $white;
 }
