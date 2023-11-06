@@ -428,7 +428,7 @@ a.nav:hover .garis {
   left: 0;
   right: 0;
   z-index: 15;
-  background-color: #131313;
+  background-color: #FFFFFF;
   visibility: visible;
   opacity: 1;
   transition: all ease-out 0.25s;
@@ -449,7 +449,7 @@ a.nav:hover .garis {
 }
 .introMawar-main h1, .introMawar-main p {
   text-align: center;
-  color: #ED89A4;
+  color: #252728;
 }
 
 @media (max-width: 524px) {
@@ -582,6 +582,11 @@ a.nav:hover .garis {
 .link_container {
   padding: 40px 0;
   gap: 24px;
+}
+
+.container-link {
+  text-decoration: none;
+  color: #252728;
 }
 
 .footer {

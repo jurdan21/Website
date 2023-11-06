@@ -1,0 +1,28 @@
+.home_about {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.home_about-title {
+  gap: 16px;
+  align-items: center;
+}
+.home_about-title span {
+  text-align: center;
+}
+
+.image_collection {
+  padding: 40px 0;
+  gap: 24px;
+}
+
+.image_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.imageui {
+  max-width: calc(48% + 8px);
+  height: 100%;
+}/*# sourceMappingURL=about.css.map */

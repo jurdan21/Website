@@ -107,6 +107,11 @@
     gap: 24px;
 }
 
+.container-link{
+    text-decoration: none;
+    color: map-get($black, 900);
+}
+
 .footer{
     align-items: center;
     padding: 40px 0;
