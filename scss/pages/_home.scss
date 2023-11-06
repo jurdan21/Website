@@ -2,7 +2,9 @@
 @import '../foundation/mixin.scss';
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 //section: hero

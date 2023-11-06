@@ -488,6 +488,10 @@ a.nav:hover .garis {
     letter-spacing: -3px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .homeHero {
   padding-top: 120px;
   padding-bottom: 40px;
