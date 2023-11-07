@@ -1,8 +1,9 @@
 @import 'variable.scss';
 @import 'mixin.scss';
 //@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 
 //font-weight
 .light {font-weight: 200;}
@@ -17,19 +18,19 @@
 //font-family: 'Caprasimo', serif;
 
 //Title
-.display-xxl {font-size: 64px; line-height: 72px; letter-spacing: 1px; font-family: 'Caprasimo', serif; text-transform: uppercase;}
+.display-xxl {font-size: 64px; line-height: 72px; letter-spacing: 1px;}
 
 //font-size: default
-.text-12px {font-size: 12px; line-height: 28px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; }
-.text-14px {font-size: 14px; line-height: 20px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; }
-.text-16px {font-size: 16px; line-height: 20px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; }
-.text-18px {font-size: 18px; line-height: 24px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; }
-.text-20px {font-size: 20px; line-height: 28px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; }
-.text-24px {font-size: 24px; line-height: 32px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; }
-.text-28px {font-size: 28px; line-height: 36px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; }
-.text-32px {font-size: 32px; line-height: 40px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; text-transform: uppercase;}
-.text-36px {font-size: 36px; line-height: 44px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; text-transform: uppercase;}
-.text-40px {font-size: 40px; line-height: 48px; letter-spacing: $letter-spacing; font-family: 'JetBrains Mono', monospace; text-transform: uppercase;}
+.text-12px {font-size: 12px; line-height: 28px; letter-spacing: $letter-spacing;}
+.text-14px {font-size: 14px; line-height: 20px; letter-spacing: $letter-spacing;}
+.text-16px {font-size: 16px; line-height: 20px; letter-spacing: $letter-spacing;}
+.text-18px {font-size: 18px; line-height: 24px; letter-spacing: $letter-spacing;}
+.text-20px {font-size: 20px; line-height: 28px; letter-spacing: $letter-spacing;}
+.text-24px {font-size: 24px; line-height: 32px; letter-spacing: $letter-spacing;}
+.text-28px {font-size: 28px; line-height: 36px; letter-spacing: $letter-spacing;}
+.text-32px {font-size: 32px; line-height: 40px; letter-spacing: $letter-spacing;}
+.text-36px {font-size: 36px; line-height: 44px; letter-spacing: $letter-spacing;}
+.text-40px {font-size: 40px; line-height: 48px; letter-spacing: $letter-spacing;}
 
 //font-size: display
 .display-xl {font-size: 92px; line-height: 92px; letter-spacing: -1.5px;}

@@ -23,7 +23,7 @@
 }
 
 .imageui {
-  max-width: calc(48% + 8px);
+  max-width: calc(48% + 5px);
   height: 100%;
 }
 

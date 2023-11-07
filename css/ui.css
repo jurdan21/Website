@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 .light {
   font-weight: 200;
 }
@@ -24,81 +23,66 @@
   font-size: 64px;
   line-height: 72px;
   letter-spacing: 1px;
-  font-family: "Caprasimo", serif;
-  text-transform: uppercase;
 }
 
 .text-12px {
   font-size: 12px;
   line-height: 28px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
 }
 
 .text-14px {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
 }
 
 .text-16px {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
 }
 
 .text-18px {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
 }
 
 .text-20px {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
 }
 
 .text-24px {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
 }
 
 .text-28px {
   font-size: 28px;
   line-height: 36px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
 }
 
 .text-32px {
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .text-36px {
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .text-40px {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 0.3px;
-  font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .display-xl {
@@ -145,8 +129,8 @@
 
 .container {
   max-width: 100%;
-  margin-right: 220px;
-  margin-left: 220px;
+  margin-right: 280px;
+  margin-left: 280px;
 }
 
 .flex-auto {
@@ -167,8 +151,8 @@
 
 @media (max-width: 1440px) {
   .container {
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: 280px;
+    margin-right: 280px;
   }
 }
 @media (max-width: 1024px) {
@@ -437,6 +421,6 @@ a.nav:hover .garis {
 }
 
 .imageui {
-  max-width: calc(48% + 8px);
+  max-width: calc(48% + 5px);
   height: 100%;
 }/*# sourceMappingURL=ui.css.map */
