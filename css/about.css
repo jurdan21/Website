@@ -32,6 +32,13 @@
   gap: 24px;
 }
 
+.project_list {
+  width: 100%;
+  gap: 24px;
+  cursor: pointer;
+  align-items: center;
+}
+
 .expertise_content {
   gap: 24px;
   align-items: center;

@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 .light {
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .reguler {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .medium {
@@ -33,7 +33,6 @@
   line-height: 28px;
   letter-spacing: 0.3px;
   font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .text-14px {
@@ -41,7 +40,6 @@
   line-height: 20px;
   letter-spacing: 0.3px;
   font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .text-16px {
@@ -49,7 +47,6 @@
   line-height: 20px;
   letter-spacing: 0.3px;
   font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .text-18px {
@@ -57,7 +54,6 @@
   line-height: 24px;
   letter-spacing: 0.3px;
   font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .text-20px {
@@ -65,7 +61,6 @@
   line-height: 28px;
   letter-spacing: 0.3px;
   font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .text-24px {
@@ -73,7 +68,6 @@
   line-height: 32px;
   letter-spacing: 0.3px;
   font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .text-28px {
@@ -81,7 +75,6 @@
   line-height: 36px;
   letter-spacing: 0.3px;
   font-family: "JetBrains Mono", monospace;
-  text-transform: uppercase;
 }
 
 .text-32px {
@@ -540,6 +533,7 @@ html {
   width: 100%;
   gap: 24px;
   cursor: pointer;
+  align-items: center;
 }
 
 .project_list:hover {
@@ -559,11 +553,12 @@ html {
 .date_project {
   width: 40%;
   text-align: right;
+  color: #7A7A7A;
 }
 
 .contact {
   padding: 40px 0;
-  gap: 24px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -579,8 +574,17 @@ html {
 
 .button_contact {
   gap: 8px;
-  padding: 8px;
+  padding: 12px 24px;
   cursor: pointer;
+  border: 1px solid #252728;
+  align-items: center;
+  border-radius: 99px;
+  text-decoration: none;
+}
+
+.btn {
+  text-decoration: none;
+  color: #252728;
 }
 
 .link_container {
