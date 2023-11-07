@@ -565,6 +565,10 @@ html {
   text-decoration: none;
 }
 
+.button_contact:hover img {
+  transform: rotate(37deg);
+}
+
 .btn {
   text-decoration: none;
   color: #252728;
