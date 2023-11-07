@@ -12,7 +12,7 @@
 }
 
 .extrabold {
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .italic {
@@ -22,7 +22,7 @@
 .display-xxl {
   font-size: 64px;
   line-height: 72px;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
 }
 
 .text-12px {
