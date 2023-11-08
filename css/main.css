@@ -524,6 +524,11 @@ html {
   align-items: center;
 }
 
+a.linknav {
+  text-decoration: none;
+  color: #252728;
+}
+
 .project_list:hover {
   background-color: #252728;
   color: #FFFFFF;

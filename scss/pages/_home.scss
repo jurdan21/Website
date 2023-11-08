@@ -61,6 +61,12 @@ html{
     cursor: pointer;
     align-items: center;
     
+    
+}
+
+a.linknav{
+    text-decoration: none;
+    color: map-get($black, 900);
 }
 
 .project_list:hover{
