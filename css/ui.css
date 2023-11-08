@@ -11,6 +11,10 @@
   font-weight: 400;
 }
 
+.semibold {
+  font-weight: 500;
+}
+
 .extrabold {
   font-weight: 900;
 }
