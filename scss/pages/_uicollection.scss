@@ -6,7 +6,27 @@
 .homeui {
     padding-top: 120px;
     padding-bottom: 40px;
+    gap: 40px;
+    align-items: center;
 }
+.button_coco{
+    gap: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border: 1px solid map-get($black, 900);
+    align-items: center;
+    border-radius: 99px;
+    text-decoration: none;
+    width: 200px;
+}
+
+.button_coco:hover{
+    img{
+        transform: rotate(37deg);
+        transition:  0.5s ease;;
+    }
+}
+
 
 .homeui-title{
     gap: 16px;
