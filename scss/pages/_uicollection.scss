@@ -62,6 +62,21 @@
     max-width: calc(48% + 5px);    
     height: 100%;
 }
+@include max-width-1024px {
+    //section: hero
+    // .homeui{
+    //     text-align: center;
+    //     h1 {@include display-;}
+        
+    
+    // }
+    .imageui{
+        //   flex: 1;
+        //   width: 0;
+            max-width: calc(100% + 4px);   
+            height: 100%;
+        }
+}
 
 
 @include max-width-768px {

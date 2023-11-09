@@ -454,6 +454,12 @@ a.nav:hover .garis {
   height: 100%;
 }
 
+@media (max-width: 1024px) {
+  .imageui {
+    max-width: calc(100% + 4px);
+    height: 100%;
+  }
+}
 @media (max-width: 768px) {
   .homeui {
     text-align: center;
