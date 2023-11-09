@@ -331,6 +331,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .footer img {
+    width: 100%;
+    height: auto;
+  }
 }
 .link-black {
   text-decoration: none;
@@ -448,4 +452,33 @@ a.nav:hover .garis {
 .imageui {
   max-width: calc(48% + 5px);
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .homeui {
+    text-align: center;
+  }
+  .homeui h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
+  .imageui {
+    max-width: calc(100% + 4px);
+    height: 100%;
+  }
+}
+@media (max-width: 524px) {
+  .homeui {
+    text-align: center;
+  }
+  .homeui h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
+  .imageui {
+    max-width: calc(100% + 4px);
+    height: 100%;
+  }
 }/*# sourceMappingURL=ui.css.map */

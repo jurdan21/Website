@@ -59,3 +59,40 @@
     text-align: center;
 }
 
+@include max-width-768px {
+    //section: hero
+    .home_about-title{
+        text-align: center;
+        h1 {@include display-sm;}
+        
+    
+    }
+    .imageui{
+        //   flex: 1;
+        //   width: 0;
+            max-width: calc(100% + 4px);   
+            height: 100%;
+        }
+}
+
+
+@include max-width-524px {
+  
+
+    
+    .home_about-title {
+        text-align: center;
+        h1 {@include display-sm;}
+        
+    
+    }
+
+    
+
+    .imageui{
+        //   flex: 1;
+        //   width: 0;
+            max-width: calc(100% + 4px);   
+            height: 100%;
+        }
+}

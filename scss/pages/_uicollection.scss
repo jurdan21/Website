@@ -63,3 +63,34 @@
     height: 100%;
 }
 
+
+@include max-width-768px {
+    //section: hero
+    .homeui{
+        text-align: center;
+        h1 {@include display-sm;}
+        
+    
+    }
+    .imageui{
+        //   flex: 1;
+        //   width: 0;
+            max-width: calc(100% + 4px);   
+            height: 100%;
+        }
+}
+@include max-width-524px {
+  
+    .homeui {
+        text-align: center;
+        h1 {@include display-sm;}
+        
+    
+    }
+    .imageui{
+        //   flex: 1;
+        //   width: 0;
+            max-width: calc(100% + 4px);   
+            height: 100%;
+        }
+}

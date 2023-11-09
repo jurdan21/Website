@@ -47,4 +47,33 @@
 .listexpertise {
   gap: 16px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home_about-title {
+    text-align: center;
+  }
+  .home_about-title h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
+  .imageui {
+    max-width: calc(100% + 4px);
+    height: 100%;
+  }
+}
+@media (max-width: 524px) {
+  .home_about-title {
+    text-align: center;
+  }
+  .home_about-title h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
+  .imageui {
+    max-width: calc(100% + 4px);
+    height: 100%;
+  }
 }/*# sourceMappingURL=about.css.map */

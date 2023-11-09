@@ -331,6 +331,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .footer img {
+    width: 100%;
+    height: auto;
+  }
 }
 .link-black {
   text-decoration: none;
@@ -834,12 +838,20 @@ a.linknav {
   }
 }
 @media (max-width: 768px) {
+  .homeHero-title {
+    text-align: center;
+  }
+  .homeHero-title h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
   .homeHero-title-detail {
     flex-wrap: wrap;
   }
-  .homeHero-title-detail h2 {
-    font-size: 36px;
-    line-height: 44px;
+  .homeHero-title-detail h1 {
+    font-size: 20px;
+    line-height: 28px;
     letter-spacing: 0.3px;
   }
   .homeHero-intro {
@@ -849,48 +861,26 @@ a.linknav {
   }
 }
 @media (max-width: 524px) {
-  .homeHero-title h1 {
-    font-size: 36px;
-    line-height: 36px;
-    letter-spacing: -0.5px;
+  .homeHero-title {
+    text-align: center;
   }
-  .homeHero-title h2 {
-    font-size: 28px;
-    line-height: 36px;
+  .homeHero-title h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
+  .list-navigasi a {
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.3px;
   }
-  .list-navigasi {
-    display: none;
+  .homeHero-title-detail h1 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.3px;
   }
   .homeHero {
-    padding-top: 200px;
-  }
-  .homeWork-header-title {
-    flex-direction: column;
-  }
-  .homeWork-header-title h1 {
-    font-size: 36px;
-    line-height: 36px;
-    letter-spacing: -0.5px;
-  }
-  .homeWork {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 120px;
-  }
-  .homeWork-header {
-    margin: 0;
-  }
-  .homeWork-list, .homeWork-row {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  .homeWork-row1 {
-    gap: 24px;
-    margin: 0;
-    flex-wrap: wrap;
+    padding-top: 140px;
   }
   .homeCareer {
     margin-top: 120px;

@@ -424,9 +424,15 @@ a.linknav{
 
 @include max-width-768px {
     //section: hero
+    .homeHero-title {
+        text-align: center;
+        h1 {@include display-sm;}
+        
+    
+    }
     .homeHero-title-detail {
         flex-wrap: wrap;
-        h2 {@include text-36px}
+        h1 {@include text-20px}
     }
 
     .homeHero-intro {
@@ -439,44 +445,28 @@ a.linknav{
 @include max-width-524px {
     //section: hero
     .homeHero-title {
-        h1 {@include display-xs;}
-        h2 {@include text-28px;}
+        text-align: center;
+        h1 {@include display-sm;}
+        
+    
+    }
+    .list-navigasi{
+        a{
+            @include text-14px;
+        }
+    }
+
+    .homeHero-title-detail{
+        h1 {@include text-20px;}
     }
     
-    .list-navigasi{
-        display: none;
-    }
+    
 
     .homeHero{
-        padding-top: 200px;
+        padding-top: 140px;
     }
 
-    //section: work
-    .homeWork-header-title {
-        flex-direction:  column;
-        h1 {@include display-xs;}
-    }
-    .homeWork{
-        display: flex;
-        flex-direction:  column;
-        gap: 40px;
-        margin-top: 120px;
-    }
-
-    .homeWork-header{
-        margin: 0;
-    }
-    .homeWork-list, .homeWork-row {
-        display: flex;
-        gap: 24px;
-        flex-wrap: wrap;
-    }
-    .homeWork-row1 {
-        gap: 24px;
-        margin: 0;
-        flex-wrap: wrap;
-    }
-
+    
 
 
     
@@ -542,4 +532,5 @@ a.linknav{
 
         a {@include text-24px;}
     }
+
 }
