@@ -459,11 +459,11 @@ a.linknav{
         
     
     }
-    .list-navigasi{
-        a{
-            @include text-14px;
-        }
-    }
+    // .list-navigasi{
+    //     a{
+    //         @include text-12px;
+    //     }
+    // }
 
     .homeHero-title-detail{
         h1 {@include text-20px;}

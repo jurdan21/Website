@@ -31,7 +31,7 @@
 
 .text-12px {
   font-size: 12px;
-  line-height: 28px;
+  line-height: 18px;
   letter-spacing: 0.3px;
 }
 
@@ -299,8 +299,19 @@ body {
   .headerExpand-list-item img {
     width: 32px;
   }
+  .list-navigasi {
+    gap: 8px;
+  }
+  .list-navigasi a {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+  }
+  .header-main {
+    padding: 40px 0;
+  }
   .menu-navigasi {
-    display: contents;
+    display: none;
   }
 }
 .footer-main {
@@ -872,11 +883,6 @@ a.linknav {
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -0.8px;
-  }
-  .list-navigasi a {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
   }
   .homeHero-title-detail h1 {
     font-size: 20px;

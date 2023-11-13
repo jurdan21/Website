@@ -109,7 +109,23 @@
         img {width: 32px;}
     }
 
+    .list-navigasi{
+        gap: 8px;
+        a{
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            line-height: 18px;  
+        }
+       
+    }
+    
+    .header-main{
+        padding: 40px 0;
+        
+    }
+   
+
     .menu-navigasi {
-        display: contents;
+        display: none;
     }
 }
