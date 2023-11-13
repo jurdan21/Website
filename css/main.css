@@ -303,9 +303,9 @@ body {
     gap: 8px;
   }
   .list-navigasi a {
-    font-size: 14px;
-    letter-spacing: 0.3px;
+    font-size: 12px;
     line-height: 18px;
+    letter-spacing: 0.3px;
   }
   .header-main {
     padding: 40px 0;
@@ -495,6 +495,13 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 32px;
+}
+
+.homeHero-title {
+  align-items: center;
+}
+.homeHero-title h1 {
+  text-align: center;
 }
 
 .homeHero-title-detail {

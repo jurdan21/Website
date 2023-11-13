@@ -112,9 +112,10 @@
     .list-navigasi{
         gap: 8px;
         a{
-            font-size: 14px;
-            letter-spacing: 0.3px;
-            line-height: 18px;  
+            @include text-12px;
+            // font-size: 14px;
+            // letter-spacing: 0.3px;
+            // line-height: 18px;  
         }
        
     }
