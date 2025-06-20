@@ -15,7 +15,8 @@
 
     a, h1 {
         text-align: center;
-        color: map-get($dark);
+        // color: map-get($dark);
+        color: red !important;
     }
 }
 
